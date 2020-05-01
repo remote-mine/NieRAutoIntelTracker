@@ -65,6 +65,7 @@
       <DependentUpon>IntelDisplay.cs</DependentUpon>
     </Compile>
     <Compile Include="GameMemory.cs" />
+    <Compile Include="NetClient.cs" />
     <Compile Include="NieRAutoIntelTrackerComponent.cs" />
     <Compile Include="NieRAutoIntelTrackerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -25,12 +25,14 @@ namespace NieRAutoIntelTracker
         public byte[] IntelUnitOld { get; set; }
 
         private IntelDisplay _intelDisplay;
+        private NetClient _netClient;
 
         public GameMemory(IntelDisplay intelDisplay)
         {
             _intelFishPtr = new DeepPointer(0x198452C); // 0x197C460
             _intelFishPtrDebug = new DeepPointer(0x25AF8AC); // 0x25A77E0
             _intelDisplay = intelDisplay;
+            _netClient = new NetClient();
             IntelFishCurrent = new byte[1];
             IntelUnitCurrent = new byte[1];
         }
@@ -59,6 +61,7 @@ namespace NieRAutoIntelTracker
                 return;
             }
 
+            _netClient.Close();
             _cancelSource.Cancel();
             _thread.Wait();
             _intelDisplay.updateComponentDisplayStatus("Game closed");
@@ -117,6 +120,9 @@ namespace NieRAutoIntelTracker
 
                         if (!IntelFishCurrent.SequenceEqual(IntelFishOld))
                         {
+                            if (_netClient.IsConnected)
+                                _netClient.Write(IntelFishCurrent);
+
                             this._intelDisplay.UpdateFishIntel(IntelFishCurrent);
                         }
 
