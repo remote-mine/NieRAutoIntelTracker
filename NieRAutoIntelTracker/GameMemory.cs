@@ -26,11 +26,14 @@ namespace NieRAutoIntelTracker
 
         private IntelDisplay _intelDisplay;
 
-        public GameMemory(IntelDisplay intelDisplay)
+        private Action<int> _fishCountDisplay;
+
+        public GameMemory(IntelDisplay intelDisplay, Action<int> fishCountDisplay)
         {
             _intelFishPtr = new DeepPointer(0x198452C); // 0x197C460
             _intelFishPtrDebug = new DeepPointer(0x25AF8AC); // 0x25A77E0
             _intelDisplay = intelDisplay;
+            _fishCountDisplay = fishCountDisplay;
             IntelFishCurrent = new byte[1];
             IntelUnitCurrent = new byte[1];
         }
@@ -111,13 +114,14 @@ namespace NieRAutoIntelTracker
 
                     while (!game.HasExited)
                     {
-                        ulong _intelFishCurrent;
                         IntelFishOld = IntelFishCurrent;
                         IntelFishCurrent = FishPtr.DerefBytes(game, 8);
 
                         if (!IntelFishCurrent.SequenceEqual(IntelFishOld))
                         {
-                            this._intelDisplay.UpdateFishIntel(IntelFishCurrent);
+                            int fishCount = IntelFishCurrent.Select(s => BitCount.PrecomputedBitcount(s)).Sum();
+                            this._fishCountDisplay(fishCount);
+                            this._intelDisplay.UpdateFishIntel(IntelFishCurrent, fishCount);
                         }
 
                         IntelUnitOld = IntelUnitCurrent;

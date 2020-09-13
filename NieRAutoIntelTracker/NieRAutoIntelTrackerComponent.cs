@@ -20,6 +20,20 @@ namespace NieRAutoIntelTracker
         private GameMemory _gameMemory;
         private IntelDisplay _intelDisplay;
 
+        protected InfoTextComponent InternalComponent { get; set; }
+
+        public string ComponentName => "NieR:Automata Intel Tracker";
+
+        public float PaddingTop => InternalComponent.PaddingTop;
+        public float PaddingLeft => InternalComponent.PaddingLeft;
+        public float PaddingBottom => InternalComponent.PaddingBottom;
+        public float PaddingRight => InternalComponent.PaddingRight;
+
+        public float VerticalHeight => InternalComponent.VerticalHeight;
+        public float MinimumWidth => InternalComponent.MinimumWidth;
+        public float HorizontalWidth => InternalComponent.HorizontalWidth;
+        public float MinimumHeight => InternalComponent.MinimumHeight;
+
         public NieRAutoIntelTrackerComponent(LiveSplitState state)
         {
             this.state = state;
@@ -27,11 +41,10 @@ namespace NieRAutoIntelTracker
             this._intelDisplay = new IntelDisplay();
             this.settings = new Settings(visible => _intelDisplay.SetVisibility(visible));
 
-            this._gameMemory = new GameMemory(_intelDisplay);
+            this._gameMemory = new GameMemory(_intelDisplay, fishCount => RefreshFishCount(fishCount));
             this._gameMemory.StartMonitoring();
 
-            HorizontalWidth = 0;
-            VerticalHeight = 0;
+            InternalComponent = new InfoTextComponent("Fish Intel", "Loading...");
 
             ContextMenuControls = new Dictionary<string, Action>
             {
@@ -39,35 +52,42 @@ namespace NieRAutoIntelTracker
             };
         }
 
-        public string ComponentName => "NieR:Automata Intel Tracker";
-
-        public float HorizontalWidth { get; set; }
-
-        public float MinimumHeight { get; set; }
-
-        public float VerticalHeight { get; set; }
-
-        public float MinimumWidth { get; set; }
-
-        public float PaddingTop { get; set; }
-
-        public float PaddingBottom { get; set; }
-
-        public float PaddingLeft { get; set; }
-
-        public float PaddingRight { get; set; }
-
         public IDictionary<string, Action> ContextMenuControls { get; set; }
+
+        private void PrepareDraw(LiveSplitState state, LayoutMode mode)
+        {
+            InternalComponent.DisplayTwoRows = false;
+
+            InternalComponent.NameLabel.HasShadow
+                = InternalComponent.ValueLabel.HasShadow
+                = state.LayoutSettings.DropShadows;
+
+            InternalComponent.InformationName = "Fish Intel";
+            InternalComponent.AlternateNameText = new[]
+            {
+                "Fish"
+            };
+            InternalComponent.NameLabel.HorizontalAlignment = StringAlignment.Near;
+            InternalComponent.ValueLabel.HorizontalAlignment = StringAlignment.Far;
+            InternalComponent.NameLabel.VerticalAlignment =
+                mode == LayoutMode.Horizontal ? StringAlignment.Near : StringAlignment.Center;
+            InternalComponent.ValueLabel.VerticalAlignment =
+                mode == LayoutMode.Horizontal ? StringAlignment.Far : StringAlignment.Center;
+            
+            InternalComponent.NameLabel.ForeColor = state.LayoutSettings.TextColor;
+            InternalComponent.ValueLabel.ForeColor = state.LayoutSettings.TextColor;
+        }
 
         public void DrawHorizontal(Graphics g, LiveSplitState state, float height, Region clipRegion)
         {
-            SolidBrush brush = new SolidBrush(state.LayoutSettings.TextColor);
-            g.DrawString(this.ComponentName, state.LayoutSettings.TextFont, brush, 0, 0);
+            PrepareDraw(state, LayoutMode.Horizontal);
+            InternalComponent.DrawHorizontal(g, state, height, clipRegion);
         }
 
         public void DrawVertical(Graphics g, LiveSplitState state, float width, Region clipRegion)
         {
-            DrawHorizontal(g, state, width, clipRegion);
+            PrepareDraw(state, LayoutMode.Vertical);
+            InternalComponent.DrawVertical(g, state, width, clipRegion);
         }
 
         public XmlNode GetSettings(XmlDocument document)
@@ -87,7 +107,12 @@ namespace NieRAutoIntelTracker
 
         public void Update(IInvalidator invalidator, LiveSplitState state, float width, float height, LayoutMode mode)
         {
+            InternalComponent.Update(invalidator, state, width, height, mode);
+        }
 
+        public void RefreshFishCount(int fishCount)
+        {
+            InternalComponent.InformationValue = fishCount + " / 43";
         }
 
         #region IDisposable Support

@@ -24,7 +24,7 @@ namespace NieRAutoIntelTracker
 
         public string UpdateName => this.ComponentName;
         public string UpdateURL => "";
-        public Version Version => Version.Parse("0.3");
+        public Version Version => Version.Parse("0.4");
         public string XMLURL => UpdateURL + "";
     }
 }
