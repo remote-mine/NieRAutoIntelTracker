@@ -30,7 +30,7 @@ namespace NieRAutoIntelTracker
             this.Visible = visible;
         }
 
-        public void UpdateFishIntel(byte[] buffer)
+        public void UpdateFishIntel(byte[] buffer, int count)
         {
             this.checkBoxMackerelM.Checked = this.checkBoxMackerelM2.Checked = (buffer[0] & (byte)FishIntel.MACKEREL_MACHINE) != 0;
             this.checkBoxCoelacanthM.Checked = (buffer[0] & (byte)FishIntel.COELACANTH_MACHINE) != 0;
@@ -81,8 +81,7 @@ namespace NieRAutoIntelTracker
             this.checkBoxArowanaM.Checked = (buffer[7] & (byte)FishIntel.AROWANA_MACHINE) != 0;
             this.checkBoxHorseshoeCrabM.Checked = (buffer[7] & (byte)FishIntel.HORSESHOE_CRAB_MACHINE) != 0;
 
-            int currentCount = buffer.Select(s => BitCount.PrecomputedBitcount(s)).Sum();
-            this.textProgressBarFish.Value = currentCount;
+            this.textProgressBarFish.Value = count;
         }
 
         public void UpdateDebugDisplay(string text)
