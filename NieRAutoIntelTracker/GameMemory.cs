@@ -104,6 +104,11 @@ namespace NieRAutoIntelTracker
                             UnitIntelPtr = new DeepPointer(0x19844C8);
                             _intelDisplay.updateComponentDisplayStatus("v1.01");
                             break;
+                        case 26177536:
+                            FishPtr = new DeepPointer(0x149452C);
+                            UnitIntelPtr = new DeepPointer(0x14944C8);
+                            _intelDisplay.updateComponentDisplayStatus("v1.02");
+                            break;
                         default:
                             FishPtr = new DeepPointer(0x25AF8AC); // 0x25A77E0
                             UnitIntelPtr = new DeepPointer(0x25AF848);
