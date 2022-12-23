@@ -129,8 +129,8 @@ namespace NieRAutoIntelTracker
             int countStd = countStdMultiTier + BitCount.PrecomputedBitcount(buffer[3] & 0xF5) + BitCount.PrecomputedBitcount(buffer[2]) + BitCount.PrecomputedBitcount(buffer[1]) + BitCount.PrecomputedBitcount(buffer[0] & 0xFE) + BitCount.PrecomputedBitcount((byte)(buffer[21] & 7)) + (int) (buffer[20] & 1);
             this.textProgressBarStd.Value = countStd;
 
-            this.checkBoxDesertSmallStubby.Checked = (buffer[0] & 1) != 0;
-            this.checkBoxDesertSmallStubbySaw.Checked = (buffer[7] & 128) != 0;
+            this.checkBoxDesertSmallStubby.Checked = (buffer[7] & 128) != 0;
+            this.checkBoxDesertSmallStubbySaw.Checked = (buffer[0] & 1) != 0;
             this.checkBoxDesertSmallBipedSword.Checked = (buffer[7] & 64) != 0;
             this.checkBoxDesertMediumBipedSword.Checked = (buffer[7] & 32) != 0;
             this.checkBoxDesertMediumBipedShield.Checked = (buffer[7] & 16) != 0;
