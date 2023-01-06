@@ -30,16 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IntelDisplay));
             this.debugValue = new System.Windows.Forms.Label();
-            this.checkBoxMackerelM = new System.Windows.Forms.CheckBox();
             this.checkBoxCoelacanthM = new System.Windows.Forms.CheckBox();
-            this.checkBoxBreamM = new System.Windows.Forms.CheckBox();
-            this.checkBoxStarfishM = new System.Windows.Forms.CheckBox();
             this.checkBoxSwordfishM = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlowfishM = new System.Windows.Forms.CheckBox();
-            this.checkBoxBloatFishM = new System.Windows.Forms.CheckBox();
-            this.checkBoxCarpM = new System.Windows.Forms.CheckBox();
-            this.checkBoxArapaimaM = new System.Windows.Forms.CheckBox();
-            this.checkBoxKoiCarpM = new System.Windows.Forms.CheckBox();
             this.checkBoxKillifishM = new System.Windows.Forms.CheckBox();
             this.checkBoxBaskingShark = new System.Windows.Forms.CheckBox();
             this.checkBoxBream = new System.Windows.Forms.CheckBox();
@@ -55,17 +47,8 @@
             this.checkBoxOilSardine = new System.Windows.Forms.CheckBox();
             this.checkBoxArapaima = new System.Windows.Forms.CheckBox();
             this.checkBoxFreshwaterRay = new System.Windows.Forms.CheckBox();
-            this.checkBoxFurCarp = new System.Windows.Forms.CheckBox();
-            this.checkBoxKoiCarp = new System.Windows.Forms.CheckBox();
             this.checkBoxBloatFish = new System.Windows.Forms.CheckBox();
-            this.checkBoxCarp = new System.Windows.Forms.CheckBox();
-            this.checkBoxKillifish = new System.Windows.Forms.CheckBox();
             this.checkBoxTwinfish = new System.Windows.Forms.CheckBox();
-            this.checkBoxArowana = new System.Windows.Forms.CheckBox();
-            this.checkBoxBrokenFirearm2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattery = new System.Windows.Forms.CheckBox();
-            this.checkBoxGasCylinder2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxTire = new System.Windows.Forms.CheckBox();
             this.checkBoxMachineHead = new System.Windows.Forms.CheckBox();
             this.checkBoxFreshwaterRayM = new System.Windows.Forms.CheckBox();
             this.checkBoxBaskingSharkM = new System.Windows.Forms.CheckBox();
@@ -82,40 +65,17 @@
             this.checkBoxBrokenFirearm = new System.Windows.Forms.CheckBox();
             this.checkBoxBattery2 = new System.Windows.Forms.CheckBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.checkBoxKillifish6 = new System.Windows.Forms.CheckBox();
             this.checkBoxKoiCarp6 = new System.Windows.Forms.CheckBox();
             this.checkBoxCarp6 = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.checkBoxKoiCarpM4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxKoiCarp4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxKillifish4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCarpM3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCarp4 = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.checkBoxKoiCarp5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxKillifish5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxGasCylinder3 = new System.Windows.Forms.CheckBox();
             this.checkBoxFurCarp2 = new System.Windows.Forms.CheckBox();
             this.checkBoxCarpM4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCarp5 = new System.Windows.Forms.CheckBox();
             this.checkBoxBloatFishM3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxArowana3 = new System.Windows.Forms.CheckBox();
             this.checkBoxArapaimaM3 = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.checkBoxKoiCarpM3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxKoiCarp3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxKillifish3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCarpM2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCarp3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBloatFishM2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxArowana2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxArapaimaM2 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.checkBoxKoiCarpM2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxKoiCarp2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxKillifish2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCarp2 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.checkBoxStarfishM2 = new System.Windows.Forms.CheckBox();
@@ -125,7 +85,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.textProgressBarEmil = new NieRAutoIntelTracker.TextProgressBar();
             this.textProgressBarAmicable = new NieRAutoIntelTracker.TextProgressBar();
@@ -374,121 +333,33 @@
             this.debugValue.TabIndex = 8;
             this.debugValue.Text = "_";
             // 
-            // checkBoxMackerelM
-            // 
-            this.checkBoxMackerelM.AutoCheck = false;
-            this.checkBoxMackerelM.AutoSize = true;
-            this.checkBoxMackerelM.Location = new System.Drawing.Point(14, 146);
-            this.checkBoxMackerelM.Name = "checkBoxMackerelM";
-            this.checkBoxMackerelM.Size = new System.Drawing.Size(114, 17);
-            this.checkBoxMackerelM.TabIndex = 2;
-            this.checkBoxMackerelM.Text = "Mackerel Machine";
-            this.checkBoxMackerelM.UseVisualStyleBackColor = true;
-            // 
             // checkBoxCoelacanthM
             // 
             this.checkBoxCoelacanthM.AutoCheck = false;
             this.checkBoxCoelacanthM.AutoSize = true;
-            this.checkBoxCoelacanthM.Location = new System.Drawing.Point(14, 350);
+            this.checkBoxCoelacanthM.Location = new System.Drawing.Point(14, 293);
             this.checkBoxCoelacanthM.Name = "checkBoxCoelacanthM";
             this.checkBoxCoelacanthM.Size = new System.Drawing.Size(124, 17);
             this.checkBoxCoelacanthM.TabIndex = 3;
             this.checkBoxCoelacanthM.Text = "Coelacanth Machine";
             this.checkBoxCoelacanthM.UseVisualStyleBackColor = true;
             // 
-            // checkBoxBreamM
-            // 
-            this.checkBoxBreamM.AutoCheck = false;
-            this.checkBoxBreamM.AutoSize = true;
-            this.checkBoxBreamM.Location = new System.Drawing.Point(14, 100);
-            this.checkBoxBreamM.Name = "checkBoxBreamM";
-            this.checkBoxBreamM.Size = new System.Drawing.Size(100, 17);
-            this.checkBoxBreamM.TabIndex = 4;
-            this.checkBoxBreamM.Text = "Bream Machine";
-            this.checkBoxBreamM.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxStarfishM
-            // 
-            this.checkBoxStarfishM.AutoCheck = false;
-            this.checkBoxStarfishM.AutoSize = true;
-            this.checkBoxStarfishM.Location = new System.Drawing.Point(14, 557);
-            this.checkBoxStarfishM.Name = "checkBoxStarfishM";
-            this.checkBoxStarfishM.Size = new System.Drawing.Size(105, 17);
-            this.checkBoxStarfishM.TabIndex = 5;
-            this.checkBoxStarfishM.Text = "Starfish Machine";
-            this.checkBoxStarfishM.UseVisualStyleBackColor = true;
-            // 
             // checkBoxSwordfishM
             // 
             this.checkBoxSwordfishM.AutoCheck = false;
             this.checkBoxSwordfishM.AutoSize = true;
-            this.checkBoxSwordfishM.Location = new System.Drawing.Point(14, 396);
+            this.checkBoxSwordfishM.Location = new System.Drawing.Point(14, 385);
             this.checkBoxSwordfishM.Name = "checkBoxSwordfishM";
             this.checkBoxSwordfishM.Size = new System.Drawing.Size(116, 17);
             this.checkBoxSwordfishM.TabIndex = 6;
             this.checkBoxSwordfishM.Text = "Swordfish Machine";
             this.checkBoxSwordfishM.UseVisualStyleBackColor = true;
             // 
-            // checkBoxBlowfishM
-            // 
-            this.checkBoxBlowfishM.AutoCheck = false;
-            this.checkBoxBlowfishM.AutoSize = true;
-            this.checkBoxBlowfishM.Location = new System.Drawing.Point(14, 54);
-            this.checkBoxBlowfishM.Name = "checkBoxBlowfishM";
-            this.checkBoxBlowfishM.Size = new System.Drawing.Size(109, 17);
-            this.checkBoxBlowfishM.TabIndex = 7;
-            this.checkBoxBlowfishM.Text = "Blowfish Machine";
-            this.checkBoxBlowfishM.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBloatFishM
-            // 
-            this.checkBoxBloatFishM.AutoCheck = false;
-            this.checkBoxBloatFishM.AutoSize = true;
-            this.checkBoxBloatFishM.Location = new System.Drawing.Point(188, 54);
-            this.checkBoxBloatFishM.Name = "checkBoxBloatFishM";
-            this.checkBoxBloatFishM.Size = new System.Drawing.Size(116, 17);
-            this.checkBoxBloatFishM.TabIndex = 9;
-            this.checkBoxBloatFishM.Text = "Bloat Fish Machine";
-            this.checkBoxBloatFishM.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCarpM
-            // 
-            this.checkBoxCarpM.AutoCheck = false;
-            this.checkBoxCarpM.AutoSize = true;
-            this.checkBoxCarpM.Location = new System.Drawing.Point(188, 123);
-            this.checkBoxCarpM.Name = "checkBoxCarpM";
-            this.checkBoxCarpM.Size = new System.Drawing.Size(92, 17);
-            this.checkBoxCarpM.TabIndex = 10;
-            this.checkBoxCarpM.Text = "Carp Machine";
-            this.checkBoxCarpM.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxArapaimaM
-            // 
-            this.checkBoxArapaimaM.AutoCheck = false;
-            this.checkBoxArapaimaM.AutoSize = true;
-            this.checkBoxArapaimaM.Location = new System.Drawing.Point(337, 31);
-            this.checkBoxArapaimaM.Name = "checkBoxArapaimaM";
-            this.checkBoxArapaimaM.Size = new System.Drawing.Size(114, 17);
-            this.checkBoxArapaimaM.TabIndex = 11;
-            this.checkBoxArapaimaM.Text = "Arapaima Machine";
-            this.checkBoxArapaimaM.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKoiCarpM
-            // 
-            this.checkBoxKoiCarpM.AutoCheck = false;
-            this.checkBoxKoiCarpM.AutoSize = true;
-            this.checkBoxKoiCarpM.Location = new System.Drawing.Point(188, 146);
-            this.checkBoxKoiCarpM.Name = "checkBoxKoiCarpM";
-            this.checkBoxKoiCarpM.Size = new System.Drawing.Size(110, 17);
-            this.checkBoxKoiCarpM.TabIndex = 12;
-            this.checkBoxKoiCarpM.Text = "Koi Carp Machine";
-            this.checkBoxKoiCarpM.UseVisualStyleBackColor = true;
-            // 
             // checkBoxKillifishM
             // 
             this.checkBoxKillifishM.AutoCheck = false;
             this.checkBoxKillifishM.AutoSize = true;
-            this.checkBoxKillifishM.Location = new System.Drawing.Point(501, 100);
+            this.checkBoxKillifishM.Location = new System.Drawing.Point(387, 201);
             this.checkBoxKillifishM.Name = "checkBoxKillifishM";
             this.checkBoxKillifishM.Size = new System.Drawing.Size(101, 17);
             this.checkBoxKillifishM.TabIndex = 13;
@@ -499,7 +370,7 @@
             // 
             this.checkBoxBaskingShark.AutoCheck = false;
             this.checkBoxBaskingShark.AutoSize = true;
-            this.checkBoxBaskingShark.Location = new System.Drawing.Point(14, 304);
+            this.checkBoxBaskingShark.Location = new System.Drawing.Point(14, 201);
             this.checkBoxBaskingShark.Name = "checkBoxBaskingShark";
             this.checkBoxBaskingShark.Size = new System.Drawing.Size(95, 17);
             this.checkBoxBaskingShark.TabIndex = 14;
@@ -510,7 +381,7 @@
             // 
             this.checkBoxBream.AutoCheck = false;
             this.checkBoxBream.AutoSize = true;
-            this.checkBoxBream.Location = new System.Drawing.Point(14, 77);
+            this.checkBoxBream.Location = new System.Drawing.Point(14, 270);
             this.checkBoxBream.Name = "checkBoxBream";
             this.checkBoxBream.Size = new System.Drawing.Size(56, 17);
             this.checkBoxBream.TabIndex = 15;
@@ -521,7 +392,7 @@
             // 
             this.checkBoxStarfish.AutoCheck = false;
             this.checkBoxStarfish.AutoSize = true;
-            this.checkBoxStarfish.Location = new System.Drawing.Point(14, 534);
+            this.checkBoxStarfish.Location = new System.Drawing.Point(14, 100);
             this.checkBoxStarfish.Name = "checkBoxStarfish";
             this.checkBoxStarfish.Size = new System.Drawing.Size(61, 17);
             this.checkBoxStarfish.TabIndex = 16;
@@ -532,7 +403,7 @@
             // 
             this.checkBoxBeetleFish.AutoCheck = false;
             this.checkBoxBeetleFish.AutoSize = true;
-            this.checkBoxBeetleFish.Location = new System.Drawing.Point(188, 329);
+            this.checkBoxBeetleFish.Location = new System.Drawing.Point(202, 386);
             this.checkBoxBeetleFish.Name = "checkBoxBeetleFish";
             this.checkBoxBeetleFish.Size = new System.Drawing.Size(78, 17);
             this.checkBoxBeetleFish.TabIndex = 17;
@@ -543,7 +414,7 @@
             // 
             this.checkBoxHorseshoeCrab.AutoCheck = false;
             this.checkBoxHorseshoeCrab.AutoSize = true;
-            this.checkBoxHorseshoeCrab.Location = new System.Drawing.Point(14, 488);
+            this.checkBoxHorseshoeCrab.Location = new System.Drawing.Point(14, 54);
             this.checkBoxHorseshoeCrab.Name = "checkBoxHorseshoeCrab";
             this.checkBoxHorseshoeCrab.Size = new System.Drawing.Size(102, 17);
             this.checkBoxHorseshoeCrab.TabIndex = 18;
@@ -554,7 +425,7 @@
             // 
             this.checkBoxMackerel.AutoCheck = false;
             this.checkBoxMackerel.AutoSize = true;
-            this.checkBoxMackerel.Location = new System.Drawing.Point(14, 123);
+            this.checkBoxMackerel.Location = new System.Drawing.Point(14, 316);
             this.checkBoxMackerel.Name = "checkBoxMackerel";
             this.checkBoxMackerel.Size = new System.Drawing.Size(70, 17);
             this.checkBoxMackerel.TabIndex = 19;
@@ -565,7 +436,7 @@
             // 
             this.checkBoxSwordfish.AutoCheck = false;
             this.checkBoxSwordfish.AutoSize = true;
-            this.checkBoxSwordfish.Location = new System.Drawing.Point(14, 373);
+            this.checkBoxSwordfish.Location = new System.Drawing.Point(14, 362);
             this.checkBoxSwordfish.Name = "checkBoxSwordfish";
             this.checkBoxSwordfish.Size = new System.Drawing.Size(72, 17);
             this.checkBoxSwordfish.TabIndex = 20;
@@ -576,7 +447,7 @@
             // 
             this.checkBoxBlowfish.AutoCheck = false;
             this.checkBoxBlowfish.AutoSize = true;
-            this.checkBoxBlowfish.Location = new System.Drawing.Point(14, 31);
+            this.checkBoxBlowfish.Location = new System.Drawing.Point(14, 247);
             this.checkBoxBlowfish.Name = "checkBoxBlowfish";
             this.checkBoxBlowfish.Size = new System.Drawing.Size(65, 17);
             this.checkBoxBlowfish.TabIndex = 21;
@@ -587,7 +458,7 @@
             // 
             this.checkBoxCoelacanth.AutoCheck = false;
             this.checkBoxCoelacanth.AutoSize = true;
-            this.checkBoxCoelacanth.Location = new System.Drawing.Point(14, 465);
+            this.checkBoxCoelacanth.Location = new System.Drawing.Point(14, 31);
             this.checkBoxCoelacanth.Name = "checkBoxCoelacanth";
             this.checkBoxCoelacanth.Size = new System.Drawing.Size(80, 17);
             this.checkBoxCoelacanth.TabIndex = 22;
@@ -598,7 +469,7 @@
             // 
             this.checkBoxTwoface.AutoCheck = false;
             this.checkBoxTwoface.AutoSize = true;
-            this.checkBoxTwoface.Location = new System.Drawing.Point(14, 192);
+            this.checkBoxTwoface.Location = new System.Drawing.Point(14, 408);
             this.checkBoxTwoface.Name = "checkBoxTwoface";
             this.checkBoxTwoface.Size = new System.Drawing.Size(68, 17);
             this.checkBoxTwoface.TabIndex = 23;
@@ -609,7 +480,7 @@
             // 
             this.checkBoxWaterFlea.AutoCheck = false;
             this.checkBoxWaterFlea.AutoSize = true;
-            this.checkBoxWaterFlea.Location = new System.Drawing.Point(14, 215);
+            this.checkBoxWaterFlea.Location = new System.Drawing.Point(14, 431);
             this.checkBoxWaterFlea.Name = "checkBoxWaterFlea";
             this.checkBoxWaterFlea.Size = new System.Drawing.Size(78, 17);
             this.checkBoxWaterFlea.TabIndex = 24;
@@ -620,7 +491,7 @@
             // 
             this.checkBoxOilSardine.AutoCheck = false;
             this.checkBoxOilSardine.AutoSize = true;
-            this.checkBoxOilSardine.Location = new System.Drawing.Point(188, 192);
+            this.checkBoxOilSardine.Location = new System.Drawing.Point(202, 270);
             this.checkBoxOilSardine.Name = "checkBoxOilSardine";
             this.checkBoxOilSardine.Size = new System.Drawing.Size(77, 17);
             this.checkBoxOilSardine.TabIndex = 25;
@@ -631,7 +502,7 @@
             // 
             this.checkBoxArapaima.AutoCheck = false;
             this.checkBoxArapaima.AutoSize = true;
-            this.checkBoxArapaima.Location = new System.Drawing.Point(337, 306);
+            this.checkBoxArapaima.Location = new System.Drawing.Point(202, 123);
             this.checkBoxArapaima.Name = "checkBoxArapaima";
             this.checkBoxArapaima.Size = new System.Drawing.Size(70, 17);
             this.checkBoxArapaima.TabIndex = 26;
@@ -642,139 +513,40 @@
             // 
             this.checkBoxFreshwaterRay.AutoCheck = false;
             this.checkBoxFreshwaterRay.AutoSize = true;
-            this.checkBoxFreshwaterRay.Location = new System.Drawing.Point(337, 100);
+            this.checkBoxFreshwaterRay.Location = new System.Drawing.Point(202, 31);
             this.checkBoxFreshwaterRay.Name = "checkBoxFreshwaterRay";
             this.checkBoxFreshwaterRay.Size = new System.Drawing.Size(100, 17);
             this.checkBoxFreshwaterRay.TabIndex = 27;
             this.checkBoxFreshwaterRay.Text = "Freshwater Ray";
             this.checkBoxFreshwaterRay.UseVisualStyleBackColor = true;
             // 
-            // checkBoxFurCarp
-            // 
-            this.checkBoxFurCarp.AutoCheck = false;
-            this.checkBoxFurCarp.AutoSize = true;
-            this.checkBoxFurCarp.Location = new System.Drawing.Point(337, 444);
-            this.checkBoxFurCarp.Name = "checkBoxFurCarp";
-            this.checkBoxFurCarp.Size = new System.Drawing.Size(66, 17);
-            this.checkBoxFurCarp.TabIndex = 28;
-            this.checkBoxFurCarp.Text = "Fur Carp";
-            this.checkBoxFurCarp.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKoiCarp
-            // 
-            this.checkBoxKoiCarp.AutoCheck = false;
-            this.checkBoxKoiCarp.AutoSize = true;
-            this.checkBoxKoiCarp.Location = new System.Drawing.Point(188, 398);
-            this.checkBoxKoiCarp.Name = "checkBoxKoiCarp";
-            this.checkBoxKoiCarp.Size = new System.Drawing.Size(66, 17);
-            this.checkBoxKoiCarp.TabIndex = 29;
-            this.checkBoxKoiCarp.Text = "Koi Carp";
-            this.checkBoxKoiCarp.UseVisualStyleBackColor = true;
-            // 
             // checkBoxBloatFish
             // 
             this.checkBoxBloatFish.AutoCheck = false;
             this.checkBoxBloatFish.AutoSize = true;
-            this.checkBoxBloatFish.Location = new System.Drawing.Point(644, 54);
+            this.checkBoxBloatFish.Location = new System.Drawing.Point(583, 224);
             this.checkBoxBloatFish.Name = "checkBoxBloatFish";
             this.checkBoxBloatFish.Size = new System.Drawing.Size(72, 17);
             this.checkBoxBloatFish.TabIndex = 30;
             this.checkBoxBloatFish.Text = "Bloat Fish";
             this.checkBoxBloatFish.UseVisualStyleBackColor = true;
             // 
-            // checkBoxCarp
-            // 
-            this.checkBoxCarp.AutoCheck = false;
-            this.checkBoxCarp.AutoSize = true;
-            this.checkBoxCarp.Location = new System.Drawing.Point(188, 352);
-            this.checkBoxCarp.Name = "checkBoxCarp";
-            this.checkBoxCarp.Size = new System.Drawing.Size(48, 17);
-            this.checkBoxCarp.TabIndex = 31;
-            this.checkBoxCarp.Text = "Carp";
-            this.checkBoxCarp.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKillifish
-            // 
-            this.checkBoxKillifish.AutoCheck = false;
-            this.checkBoxKillifish.AutoSize = true;
-            this.checkBoxKillifish.Location = new System.Drawing.Point(188, 375);
-            this.checkBoxKillifish.Name = "checkBoxKillifish";
-            this.checkBoxKillifish.Size = new System.Drawing.Size(57, 17);
-            this.checkBoxKillifish.TabIndex = 32;
-            this.checkBoxKillifish.Text = "Killifish";
-            this.checkBoxKillifish.UseVisualStyleBackColor = true;
-            // 
             // checkBoxTwinfish
             // 
             this.checkBoxTwinfish.AutoCheck = false;
             this.checkBoxTwinfish.AutoSize = true;
-            this.checkBoxTwinfish.Location = new System.Drawing.Point(644, 146);
+            this.checkBoxTwinfish.Location = new System.Drawing.Point(583, 316);
             this.checkBoxTwinfish.Name = "checkBoxTwinfish";
             this.checkBoxTwinfish.Size = new System.Drawing.Size(65, 17);
             this.checkBoxTwinfish.TabIndex = 33;
             this.checkBoxTwinfish.Text = "Twinfish";
             this.checkBoxTwinfish.UseVisualStyleBackColor = true;
             // 
-            // checkBoxArowana
-            // 
-            this.checkBoxArowana.AutoCheck = false;
-            this.checkBoxArowana.AutoSize = true;
-            this.checkBoxArowana.Location = new System.Drawing.Point(188, 306);
-            this.checkBoxArowana.Name = "checkBoxArowana";
-            this.checkBoxArowana.Size = new System.Drawing.Size(68, 17);
-            this.checkBoxArowana.TabIndex = 34;
-            this.checkBoxArowana.Text = "Arowana";
-            this.checkBoxArowana.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBrokenFirearm2
-            // 
-            this.checkBoxBrokenFirearm2.AutoCheck = false;
-            this.checkBoxBrokenFirearm2.AutoSize = true;
-            this.checkBoxBrokenFirearm2.Location = new System.Drawing.Point(337, 54);
-            this.checkBoxBrokenFirearm2.Name = "checkBoxBrokenFirearm2";
-            this.checkBoxBrokenFirearm2.Size = new System.Drawing.Size(97, 17);
-            this.checkBoxBrokenFirearm2.TabIndex = 35;
-            this.checkBoxBrokenFirearm2.Text = "Broken Firearm";
-            this.checkBoxBrokenFirearm2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattery
-            // 
-            this.checkBoxBattery.AutoCheck = false;
-            this.checkBoxBattery.AutoSize = true;
-            this.checkBoxBattery.Location = new System.Drawing.Point(188, 31);
-            this.checkBoxBattery.Name = "checkBoxBattery";
-            this.checkBoxBattery.Size = new System.Drawing.Size(59, 17);
-            this.checkBoxBattery.TabIndex = 36;
-            this.checkBoxBattery.Text = "Battery";
-            this.checkBoxBattery.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGasCylinder2
-            // 
-            this.checkBoxGasCylinder2.AutoCheck = false;
-            this.checkBoxGasCylinder2.AutoSize = true;
-            this.checkBoxGasCylinder2.Location = new System.Drawing.Point(337, 465);
-            this.checkBoxGasCylinder2.Name = "checkBoxGasCylinder2";
-            this.checkBoxGasCylinder2.Size = new System.Drawing.Size(85, 17);
-            this.checkBoxGasCylinder2.TabIndex = 37;
-            this.checkBoxGasCylinder2.Text = "Gas Cylinder";
-            this.checkBoxGasCylinder2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxTire
-            // 
-            this.checkBoxTire.AutoCheck = false;
-            this.checkBoxTire.AutoSize = true;
-            this.checkBoxTire.Location = new System.Drawing.Point(14, 169);
-            this.checkBoxTire.Name = "checkBoxTire";
-            this.checkBoxTire.Size = new System.Drawing.Size(44, 17);
-            this.checkBoxTire.TabIndex = 38;
-            this.checkBoxTire.Text = "Tire";
-            this.checkBoxTire.UseVisualStyleBackColor = true;
-            // 
             // checkBoxMachineHead
             // 
             this.checkBoxMachineHead.AutoCheck = false;
             this.checkBoxMachineHead.AutoSize = true;
-            this.checkBoxMachineHead.Location = new System.Drawing.Point(644, 306);
+            this.checkBoxMachineHead.Location = new System.Drawing.Point(387, 224);
             this.checkBoxMachineHead.Name = "checkBoxMachineHead";
             this.checkBoxMachineHead.Size = new System.Drawing.Size(136, 17);
             this.checkBoxMachineHead.TabIndex = 39;
@@ -785,7 +557,7 @@
             // 
             this.checkBoxFreshwaterRayM.AutoCheck = false;
             this.checkBoxFreshwaterRayM.AutoSize = true;
-            this.checkBoxFreshwaterRayM.Location = new System.Drawing.Point(337, 123);
+            this.checkBoxFreshwaterRayM.Location = new System.Drawing.Point(202, 54);
             this.checkBoxFreshwaterRayM.Name = "checkBoxFreshwaterRayM";
             this.checkBoxFreshwaterRayM.Size = new System.Drawing.Size(144, 17);
             this.checkBoxFreshwaterRayM.TabIndex = 40;
@@ -796,7 +568,7 @@
             // 
             this.checkBoxBaskingSharkM.AutoCheck = false;
             this.checkBoxBaskingSharkM.AutoSize = true;
-            this.checkBoxBaskingSharkM.Location = new System.Drawing.Point(14, 327);
+            this.checkBoxBaskingSharkM.Location = new System.Drawing.Point(14, 224);
             this.checkBoxBaskingSharkM.Name = "checkBoxBaskingSharkM";
             this.checkBoxBaskingSharkM.Size = new System.Drawing.Size(139, 17);
             this.checkBoxBaskingSharkM.TabIndex = 41;
@@ -807,7 +579,7 @@
             // 
             this.checkBoxArowanaM.AutoCheck = false;
             this.checkBoxArowanaM.AutoSize = true;
-            this.checkBoxArowanaM.Location = new System.Drawing.Point(501, 352);
+            this.checkBoxArowanaM.Location = new System.Drawing.Point(387, 54);
             this.checkBoxArowanaM.Name = "checkBoxArowanaM";
             this.checkBoxArowanaM.Size = new System.Drawing.Size(112, 17);
             this.checkBoxArowanaM.TabIndex = 42;
@@ -818,7 +590,7 @@
             // 
             this.checkBoxHorseshoeCrabM.AutoCheck = false;
             this.checkBoxHorseshoeCrabM.AutoSize = true;
-            this.checkBoxHorseshoeCrabM.Location = new System.Drawing.Point(14, 511);
+            this.checkBoxHorseshoeCrabM.Location = new System.Drawing.Point(14, 77);
             this.checkBoxHorseshoeCrabM.Name = "checkBoxHorseshoeCrabM";
             this.checkBoxHorseshoeCrabM.Size = new System.Drawing.Size(146, 17);
             this.checkBoxHorseshoeCrabM.TabIndex = 43;
@@ -851,47 +623,22 @@
             this.tabPage1.Controls.Add(this.checkBoxBrokenFirearm);
             this.tabPage1.Controls.Add(this.checkBoxBattery2);
             this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.checkBoxMachineHead);
             this.tabPage1.Controls.Add(this.checkBoxKillifish6);
             this.tabPage1.Controls.Add(this.checkBoxKoiCarp6);
             this.tabPage1.Controls.Add(this.checkBoxTwinfish);
             this.tabPage1.Controls.Add(this.checkBoxCarp6);
             this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.checkBoxKoiCarpM4);
-            this.tabPage1.Controls.Add(this.checkBoxKoiCarp4);
             this.tabPage1.Controls.Add(this.checkBoxBloatFish);
-            this.tabPage1.Controls.Add(this.checkBoxKillifish4);
-            this.tabPage1.Controls.Add(this.checkBoxCarpM3);
-            this.tabPage1.Controls.Add(this.checkBoxCarp4);
             this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.checkBoxKoiCarp5);
-            this.tabPage1.Controls.Add(this.checkBoxKillifish5);
-            this.tabPage1.Controls.Add(this.checkBoxGasCylinder3);
             this.tabPage1.Controls.Add(this.checkBoxFurCarp2);
             this.tabPage1.Controls.Add(this.checkBoxCarpM4);
-            this.tabPage1.Controls.Add(this.checkBoxCarp5);
             this.tabPage1.Controls.Add(this.checkBoxBloatFishM3);
-            this.tabPage1.Controls.Add(this.checkBoxArowana3);
             this.tabPage1.Controls.Add(this.checkBoxArowanaM);
             this.tabPage1.Controls.Add(this.checkBoxArapaimaM3);
             this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.checkBoxKoiCarpM3);
-            this.tabPage1.Controls.Add(this.checkBoxKoiCarp3);
-            this.tabPage1.Controls.Add(this.checkBoxKillifish3);
-            this.tabPage1.Controls.Add(this.checkBoxCarpM2);
-            this.tabPage1.Controls.Add(this.checkBoxCarp3);
             this.tabPage1.Controls.Add(this.checkBoxArapaima);
-            this.tabPage1.Controls.Add(this.checkBoxBloatFishM2);
-            this.tabPage1.Controls.Add(this.checkBoxGasCylinder2);
-            this.tabPage1.Controls.Add(this.checkBoxArowana2);
-            this.tabPage1.Controls.Add(this.checkBoxArapaimaM2);
             this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.checkBoxFurCarp);
-            this.tabPage1.Controls.Add(this.checkBoxKoiCarpM2);
-            this.tabPage1.Controls.Add(this.checkBoxKoiCarp2);
-            this.tabPage1.Controls.Add(this.checkBoxKillifish2);
-            this.tabPage1.Controls.Add(this.checkBoxCarp2);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.checkBoxFreshwaterRayM);
             this.tabPage1.Controls.Add(this.label5);
@@ -899,43 +646,27 @@
             this.tabPage1.Controls.Add(this.checkBoxMackerelM2);
             this.tabPage1.Controls.Add(this.checkBoxBreamM2);
             this.tabPage1.Controls.Add(this.checkBoxKillifishM);
-            this.tabPage1.Controls.Add(this.checkBoxBrokenFirearm2);
             this.tabPage1.Controls.Add(this.checkBoxBlowfishM2);
             this.tabPage1.Controls.Add(this.checkBoxFreshwaterRay);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.checkBoxArowana);
-            this.tabPage1.Controls.Add(this.checkBoxKillifish);
-            this.tabPage1.Controls.Add(this.checkBoxKoiCarp);
             this.tabPage1.Controls.Add(this.checkBoxHorseshoeCrabM);
-            this.tabPage1.Controls.Add(this.checkBoxCarp);
-            this.tabPage1.Controls.Add(this.checkBoxArapaimaM);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.checkBoxBattery);
             this.tabPage1.Controls.Add(this.checkBoxBaskingSharkM);
-            this.tabPage1.Controls.Add(this.checkBoxMackerelM);
             this.tabPage1.Controls.Add(this.checkBoxBeetleFish);
             this.tabPage1.Controls.Add(this.checkBoxBlowfish);
-            this.tabPage1.Controls.Add(this.checkBoxBlowfishM);
             this.tabPage1.Controls.Add(this.checkBoxBream);
-            this.tabPage1.Controls.Add(this.checkBoxTire);
             this.tabPage1.Controls.Add(this.checkBoxOilSardine);
-            this.tabPage1.Controls.Add(this.checkBoxBreamM);
             this.tabPage1.Controls.Add(this.checkBoxMackerel);
             this.tabPage1.Controls.Add(this.checkBoxTwoface);
             this.tabPage1.Controls.Add(this.checkBoxWaterFlea);
-            this.tabPage1.Controls.Add(this.checkBoxKoiCarpM);
             this.tabPage1.Controls.Add(this.checkBoxBaskingShark);
             this.tabPage1.Controls.Add(this.checkBoxCoelacanthM);
-            this.tabPage1.Controls.Add(this.checkBoxCarpM);
             this.tabPage1.Controls.Add(this.checkBoxSwordfish);
             this.tabPage1.Controls.Add(this.checkBoxStarfish);
             this.tabPage1.Controls.Add(this.checkBoxSwordfishM);
-            this.tabPage1.Controls.Add(this.checkBoxBloatFishM);
             this.tabPage1.Controls.Add(this.checkBoxHorseshoeCrab);
             this.tabPage1.Controls.Add(this.checkBoxCoelacanth);
-            this.tabPage1.Controls.Add(this.checkBoxStarfishM);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(0);
             this.tabPage1.Name = "tabPage1";
@@ -948,7 +679,7 @@
             this.checkBoxPodB.AutoCheck = false;
             this.checkBoxPodB.AutoSize = true;
             this.checkBoxPodB.ForeColor = System.Drawing.Color.Red;
-            this.checkBoxPodB.Location = new System.Drawing.Point(14, 238);
+            this.checkBoxPodB.Location = new System.Drawing.Point(14, 339);
             this.checkBoxPodB.Name = "checkBoxPodB";
             this.checkBoxPodB.Size = new System.Drawing.Size(55, 17);
             this.checkBoxPodB.TabIndex = 93;
@@ -960,7 +691,7 @@
             this.checkBoxIronPipe.AutoCheck = false;
             this.checkBoxIronPipe.AutoSize = true;
             this.checkBoxIronPipe.ForeColor = System.Drawing.Color.Red;
-            this.checkBoxIronPipe.Location = new System.Drawing.Point(188, 557);
+            this.checkBoxIronPipe.Location = new System.Drawing.Point(583, 100);
             this.checkBoxIronPipe.Name = "checkBoxIronPipe";
             this.checkBoxIronPipe.Size = new System.Drawing.Size(68, 17);
             this.checkBoxIronPipe.TabIndex = 92;
@@ -971,7 +702,7 @@
             // 
             this.checkBoxKoiCarpM5.AutoCheck = false;
             this.checkBoxKoiCarpM5.AutoSize = true;
-            this.checkBoxKoiCarpM5.Location = new System.Drawing.Point(501, 534);
+            this.checkBoxKoiCarpM5.Location = new System.Drawing.Point(387, 146);
             this.checkBoxKoiCarpM5.Name = "checkBoxKoiCarpM5";
             this.checkBoxKoiCarpM5.Size = new System.Drawing.Size(110, 17);
             this.checkBoxKoiCarpM5.TabIndex = 91;
@@ -982,7 +713,7 @@
             // 
             this.checkBoxArowana4.AutoCheck = false;
             this.checkBoxArowana4.AutoSize = true;
-            this.checkBoxArowana4.Location = new System.Drawing.Point(644, 31);
+            this.checkBoxArowana4.Location = new System.Drawing.Point(583, 201);
             this.checkBoxArowana4.Name = "checkBoxArowana4";
             this.checkBoxArowana4.Size = new System.Drawing.Size(68, 17);
             this.checkBoxArowana4.TabIndex = 90;
@@ -993,7 +724,7 @@
             // 
             this.checkBoxTire2.AutoCheck = false;
             this.checkBoxTire2.AutoSize = true;
-            this.checkBoxTire2.Location = new System.Drawing.Point(188, 534);
+            this.checkBoxTire2.Location = new System.Drawing.Point(583, 123);
             this.checkBoxTire2.Name = "checkBoxTire2";
             this.checkBoxTire2.Size = new System.Drawing.Size(44, 17);
             this.checkBoxTire2.TabIndex = 89;
@@ -1004,7 +735,7 @@
             // 
             this.checkBoxGasCylinder.AutoCheck = false;
             this.checkBoxGasCylinder.AutoSize = true;
-            this.checkBoxGasCylinder.Location = new System.Drawing.Point(188, 511);
+            this.checkBoxGasCylinder.Location = new System.Drawing.Point(583, 77);
             this.checkBoxGasCylinder.Name = "checkBoxGasCylinder";
             this.checkBoxGasCylinder.Size = new System.Drawing.Size(85, 17);
             this.checkBoxGasCylinder.TabIndex = 88;
@@ -1015,7 +746,7 @@
             // 
             this.checkBoxBrokenFirearm.AutoCheck = false;
             this.checkBoxBrokenFirearm.AutoSize = true;
-            this.checkBoxBrokenFirearm.Location = new System.Drawing.Point(188, 488);
+            this.checkBoxBrokenFirearm.Location = new System.Drawing.Point(583, 54);
             this.checkBoxBrokenFirearm.Name = "checkBoxBrokenFirearm";
             this.checkBoxBrokenFirearm.Size = new System.Drawing.Size(97, 17);
             this.checkBoxBrokenFirearm.TabIndex = 87;
@@ -1026,7 +757,7 @@
             // 
             this.checkBoxBattery2.AutoCheck = false;
             this.checkBoxBattery2.AutoSize = true;
-            this.checkBoxBattery2.Location = new System.Drawing.Point(188, 465);
+            this.checkBoxBattery2.Location = new System.Drawing.Point(583, 31);
             this.checkBoxBattery2.Name = "checkBoxBattery2";
             this.checkBoxBattery2.Size = new System.Drawing.Size(59, 17);
             this.checkBoxBattery2.TabIndex = 86;
@@ -1036,26 +767,17 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(185, 444);
+            this.label12.Location = new System.Drawing.Point(580, 10);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(95, 13);
             this.label12.TabIndex = 85;
             this.label12.Text = "City Ruins: Sewers";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(641, 283);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 13);
-            this.label11.TabIndex = 84;
-            this.label11.Text = "Anywhere";
-            // 
             // checkBoxKillifish6
             // 
             this.checkBoxKillifish6.AutoCheck = false;
             this.checkBoxKillifish6.AutoSize = true;
-            this.checkBoxKillifish6.Location = new System.Drawing.Point(644, 100);
+            this.checkBoxKillifish6.Location = new System.Drawing.Point(583, 270);
             this.checkBoxKillifish6.Name = "checkBoxKillifish6";
             this.checkBoxKillifish6.Size = new System.Drawing.Size(57, 17);
             this.checkBoxKillifish6.TabIndex = 83;
@@ -1066,7 +788,7 @@
             // 
             this.checkBoxKoiCarp6.AutoCheck = false;
             this.checkBoxKoiCarp6.AutoSize = true;
-            this.checkBoxKoiCarp6.Location = new System.Drawing.Point(644, 123);
+            this.checkBoxKoiCarp6.Location = new System.Drawing.Point(583, 293);
             this.checkBoxKoiCarp6.Name = "checkBoxKoiCarp6";
             this.checkBoxKoiCarp6.Size = new System.Drawing.Size(66, 17);
             this.checkBoxKoiCarp6.TabIndex = 81;
@@ -1077,7 +799,7 @@
             // 
             this.checkBoxCarp6.AutoCheck = false;
             this.checkBoxCarp6.AutoSize = true;
-            this.checkBoxCarp6.Location = new System.Drawing.Point(644, 77);
+            this.checkBoxCarp6.Location = new System.Drawing.Point(583, 247);
             this.checkBoxCarp6.Name = "checkBoxCarp6";
             this.checkBoxCarp6.Size = new System.Drawing.Size(48, 17);
             this.checkBoxCarp6.TabIndex = 82;
@@ -1087,114 +809,26 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(641, 10);
+            this.label10.Location = new System.Drawing.Point(580, 180);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(149, 13);
             this.label10.TabIndex = 80;
             this.label10.Text = "City Ruins: Underground Lake";
             // 
-            // checkBoxKoiCarpM4
-            // 
-            this.checkBoxKoiCarpM4.AutoCheck = false;
-            this.checkBoxKoiCarpM4.AutoSize = true;
-            this.checkBoxKoiCarpM4.Location = new System.Drawing.Point(501, 146);
-            this.checkBoxKoiCarpM4.Name = "checkBoxKoiCarpM4";
-            this.checkBoxKoiCarpM4.Size = new System.Drawing.Size(110, 17);
-            this.checkBoxKoiCarpM4.TabIndex = 79;
-            this.checkBoxKoiCarpM4.Text = "Koi Carp Machine";
-            this.checkBoxKoiCarpM4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKoiCarp4
-            // 
-            this.checkBoxKoiCarp4.AutoCheck = false;
-            this.checkBoxKoiCarp4.AutoSize = true;
-            this.checkBoxKoiCarp4.Location = new System.Drawing.Point(501, 123);
-            this.checkBoxKoiCarp4.Name = "checkBoxKoiCarp4";
-            this.checkBoxKoiCarp4.Size = new System.Drawing.Size(66, 17);
-            this.checkBoxKoiCarp4.TabIndex = 78;
-            this.checkBoxKoiCarp4.Text = "Koi Carp";
-            this.checkBoxKoiCarp4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKillifish4
-            // 
-            this.checkBoxKillifish4.AutoCheck = false;
-            this.checkBoxKillifish4.AutoSize = true;
-            this.checkBoxKillifish4.Location = new System.Drawing.Point(501, 77);
-            this.checkBoxKillifish4.Name = "checkBoxKillifish4";
-            this.checkBoxKillifish4.Size = new System.Drawing.Size(57, 17);
-            this.checkBoxKillifish4.TabIndex = 77;
-            this.checkBoxKillifish4.Text = "Killifish";
-            this.checkBoxKillifish4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCarpM3
-            // 
-            this.checkBoxCarpM3.AutoCheck = false;
-            this.checkBoxCarpM3.AutoSize = true;
-            this.checkBoxCarpM3.Location = new System.Drawing.Point(501, 54);
-            this.checkBoxCarpM3.Name = "checkBoxCarpM3";
-            this.checkBoxCarpM3.Size = new System.Drawing.Size(92, 17);
-            this.checkBoxCarpM3.TabIndex = 75;
-            this.checkBoxCarpM3.Text = "Carp Machine";
-            this.checkBoxCarpM3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCarp4
-            // 
-            this.checkBoxCarp4.AutoCheck = false;
-            this.checkBoxCarp4.AutoSize = true;
-            this.checkBoxCarp4.Location = new System.Drawing.Point(501, 31);
-            this.checkBoxCarp4.Name = "checkBoxCarp4";
-            this.checkBoxCarp4.Size = new System.Drawing.Size(48, 17);
-            this.checkBoxCarp4.TabIndex = 74;
-            this.checkBoxCarp4.Text = "Carp";
-            this.checkBoxCarp4.UseVisualStyleBackColor = true;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(498, 10);
+            this.label9.Location = new System.Drawing.Point(384, 180);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(83, 13);
             this.label9.TabIndex = 73;
             this.label9.Text = "City Ruins: Main";
             // 
-            // checkBoxKoiCarp5
-            // 
-            this.checkBoxKoiCarp5.AutoCheck = false;
-            this.checkBoxKoiCarp5.AutoSize = true;
-            this.checkBoxKoiCarp5.Location = new System.Drawing.Point(501, 511);
-            this.checkBoxKoiCarp5.Name = "checkBoxKoiCarp5";
-            this.checkBoxKoiCarp5.Size = new System.Drawing.Size(66, 17);
-            this.checkBoxKoiCarp5.TabIndex = 72;
-            this.checkBoxKoiCarp5.Text = "Koi Carp";
-            this.checkBoxKoiCarp5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKillifish5
-            // 
-            this.checkBoxKillifish5.AutoCheck = false;
-            this.checkBoxKillifish5.AutoSize = true;
-            this.checkBoxKillifish5.Location = new System.Drawing.Point(501, 488);
-            this.checkBoxKillifish5.Name = "checkBoxKillifish5";
-            this.checkBoxKillifish5.Size = new System.Drawing.Size(57, 17);
-            this.checkBoxKillifish5.TabIndex = 71;
-            this.checkBoxKillifish5.Text = "Killifish";
-            this.checkBoxKillifish5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGasCylinder3
-            // 
-            this.checkBoxGasCylinder3.AutoCheck = false;
-            this.checkBoxGasCylinder3.AutoSize = true;
-            this.checkBoxGasCylinder3.Location = new System.Drawing.Point(501, 465);
-            this.checkBoxGasCylinder3.Name = "checkBoxGasCylinder3";
-            this.checkBoxGasCylinder3.Size = new System.Drawing.Size(85, 17);
-            this.checkBoxGasCylinder3.TabIndex = 70;
-            this.checkBoxGasCylinder3.Text = "Gas Cylinder";
-            this.checkBoxGasCylinder3.UseVisualStyleBackColor = true;
-            // 
             // checkBoxFurCarp2
             // 
             this.checkBoxFurCarp2.AutoCheck = false;
             this.checkBoxFurCarp2.AutoSize = true;
-            this.checkBoxFurCarp2.Location = new System.Drawing.Point(501, 444);
+            this.checkBoxFurCarp2.Location = new System.Drawing.Point(387, 123);
             this.checkBoxFurCarp2.Name = "checkBoxFurCarp2";
             this.checkBoxFurCarp2.Size = new System.Drawing.Size(66, 17);
             this.checkBoxFurCarp2.TabIndex = 69;
@@ -1205,51 +839,29 @@
             // 
             this.checkBoxCarpM4.AutoCheck = false;
             this.checkBoxCarpM4.AutoSize = true;
-            this.checkBoxCarpM4.Location = new System.Drawing.Point(501, 421);
+            this.checkBoxCarpM4.Location = new System.Drawing.Point(387, 100);
             this.checkBoxCarpM4.Name = "checkBoxCarpM4";
             this.checkBoxCarpM4.Size = new System.Drawing.Size(92, 17);
             this.checkBoxCarpM4.TabIndex = 68;
             this.checkBoxCarpM4.Text = "Carp Machine";
             this.checkBoxCarpM4.UseVisualStyleBackColor = true;
             // 
-            // checkBoxCarp5
-            // 
-            this.checkBoxCarp5.AutoCheck = false;
-            this.checkBoxCarp5.AutoSize = true;
-            this.checkBoxCarp5.Location = new System.Drawing.Point(501, 398);
-            this.checkBoxCarp5.Name = "checkBoxCarp5";
-            this.checkBoxCarp5.Size = new System.Drawing.Size(48, 17);
-            this.checkBoxCarp5.TabIndex = 67;
-            this.checkBoxCarp5.Text = "Carp";
-            this.checkBoxCarp5.UseVisualStyleBackColor = true;
-            // 
             // checkBoxBloatFishM3
             // 
             this.checkBoxBloatFishM3.AutoCheck = false;
             this.checkBoxBloatFishM3.AutoSize = true;
-            this.checkBoxBloatFishM3.Location = new System.Drawing.Point(501, 375);
+            this.checkBoxBloatFishM3.Location = new System.Drawing.Point(387, 77);
             this.checkBoxBloatFishM3.Name = "checkBoxBloatFishM3";
             this.checkBoxBloatFishM3.Size = new System.Drawing.Size(116, 17);
             this.checkBoxBloatFishM3.TabIndex = 66;
             this.checkBoxBloatFishM3.Text = "Bloat Fish Machine";
             this.checkBoxBloatFishM3.UseVisualStyleBackColor = true;
             // 
-            // checkBoxArowana3
-            // 
-            this.checkBoxArowana3.AutoCheck = false;
-            this.checkBoxArowana3.AutoSize = true;
-            this.checkBoxArowana3.Location = new System.Drawing.Point(501, 329);
-            this.checkBoxArowana3.Name = "checkBoxArowana3";
-            this.checkBoxArowana3.Size = new System.Drawing.Size(68, 17);
-            this.checkBoxArowana3.TabIndex = 65;
-            this.checkBoxArowana3.Text = "Arowana";
-            this.checkBoxArowana3.UseVisualStyleBackColor = true;
-            // 
             // checkBoxArapaimaM3
             // 
             this.checkBoxArapaimaM3.AutoCheck = false;
             this.checkBoxArapaimaM3.AutoSize = true;
-            this.checkBoxArapaimaM3.Location = new System.Drawing.Point(501, 306);
+            this.checkBoxArapaimaM3.Location = new System.Drawing.Point(387, 31);
             this.checkBoxArapaimaM3.Name = "checkBoxArapaimaM3";
             this.checkBoxArapaimaM3.Size = new System.Drawing.Size(114, 17);
             this.checkBoxArapaimaM3.TabIndex = 64;
@@ -1259,157 +871,25 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(498, 283);
+            this.label8.Location = new System.Drawing.Point(384, 10);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 13);
             this.label8.TabIndex = 63;
             this.label8.Text = "City Ruins: Ravine";
             // 
-            // checkBoxKoiCarpM3
-            // 
-            this.checkBoxKoiCarpM3.AutoCheck = false;
-            this.checkBoxKoiCarpM3.AutoSize = true;
-            this.checkBoxKoiCarpM3.Location = new System.Drawing.Point(337, 534);
-            this.checkBoxKoiCarpM3.Name = "checkBoxKoiCarpM3";
-            this.checkBoxKoiCarpM3.Size = new System.Drawing.Size(110, 17);
-            this.checkBoxKoiCarpM3.TabIndex = 62;
-            this.checkBoxKoiCarpM3.Text = "Koi Carp Machine";
-            this.checkBoxKoiCarpM3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKoiCarp3
-            // 
-            this.checkBoxKoiCarp3.AutoCheck = false;
-            this.checkBoxKoiCarp3.AutoSize = true;
-            this.checkBoxKoiCarp3.Location = new System.Drawing.Point(337, 511);
-            this.checkBoxKoiCarp3.Name = "checkBoxKoiCarp3";
-            this.checkBoxKoiCarp3.Size = new System.Drawing.Size(66, 17);
-            this.checkBoxKoiCarp3.TabIndex = 61;
-            this.checkBoxKoiCarp3.Text = "Koi Carp";
-            this.checkBoxKoiCarp3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKillifish3
-            // 
-            this.checkBoxKillifish3.AutoCheck = false;
-            this.checkBoxKillifish3.AutoSize = true;
-            this.checkBoxKillifish3.Location = new System.Drawing.Point(337, 488);
-            this.checkBoxKillifish3.Name = "checkBoxKillifish3";
-            this.checkBoxKillifish3.Size = new System.Drawing.Size(57, 17);
-            this.checkBoxKillifish3.TabIndex = 60;
-            this.checkBoxKillifish3.Text = "Killifish";
-            this.checkBoxKillifish3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCarpM2
-            // 
-            this.checkBoxCarpM2.AutoCheck = false;
-            this.checkBoxCarpM2.AutoSize = true;
-            this.checkBoxCarpM2.Location = new System.Drawing.Point(337, 421);
-            this.checkBoxCarpM2.Name = "checkBoxCarpM2";
-            this.checkBoxCarpM2.Size = new System.Drawing.Size(92, 17);
-            this.checkBoxCarpM2.TabIndex = 59;
-            this.checkBoxCarpM2.Text = "Carp Machine";
-            this.checkBoxCarpM2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCarp3
-            // 
-            this.checkBoxCarp3.AutoCheck = false;
-            this.checkBoxCarp3.AutoSize = true;
-            this.checkBoxCarp3.Location = new System.Drawing.Point(337, 398);
-            this.checkBoxCarp3.Name = "checkBoxCarp3";
-            this.checkBoxCarp3.Size = new System.Drawing.Size(48, 17);
-            this.checkBoxCarp3.TabIndex = 58;
-            this.checkBoxCarp3.Text = "Carp";
-            this.checkBoxCarp3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBloatFishM2
-            // 
-            this.checkBoxBloatFishM2.AutoCheck = false;
-            this.checkBoxBloatFishM2.AutoSize = true;
-            this.checkBoxBloatFishM2.Location = new System.Drawing.Point(337, 375);
-            this.checkBoxBloatFishM2.Name = "checkBoxBloatFishM2";
-            this.checkBoxBloatFishM2.Size = new System.Drawing.Size(116, 17);
-            this.checkBoxBloatFishM2.TabIndex = 57;
-            this.checkBoxBloatFishM2.Text = "Bloat Fish Machine";
-            this.checkBoxBloatFishM2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxArowana2
-            // 
-            this.checkBoxArowana2.AutoCheck = false;
-            this.checkBoxArowana2.AutoSize = true;
-            this.checkBoxArowana2.Location = new System.Drawing.Point(337, 352);
-            this.checkBoxArowana2.Name = "checkBoxArowana2";
-            this.checkBoxArowana2.Size = new System.Drawing.Size(68, 17);
-            this.checkBoxArowana2.TabIndex = 56;
-            this.checkBoxArowana2.Text = "Arowana";
-            this.checkBoxArowana2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxArapaimaM2
-            // 
-            this.checkBoxArapaimaM2.AutoCheck = false;
-            this.checkBoxArapaimaM2.AutoSize = true;
-            this.checkBoxArapaimaM2.Location = new System.Drawing.Point(337, 329);
-            this.checkBoxArapaimaM2.Name = "checkBoxArapaimaM2";
-            this.checkBoxArapaimaM2.Size = new System.Drawing.Size(114, 17);
-            this.checkBoxArapaimaM2.TabIndex = 55;
-            this.checkBoxArapaimaM2.Text = "Arapaima Machine";
-            this.checkBoxArapaimaM2.UseVisualStyleBackColor = true;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(334, 283);
+            this.label7.Location = new System.Drawing.Point(199, 102);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 13);
             this.label7.TabIndex = 54;
             this.label7.Text = "Forest";
             // 
-            // checkBoxKoiCarpM2
-            // 
-            this.checkBoxKoiCarpM2.AutoCheck = false;
-            this.checkBoxKoiCarpM2.AutoSize = true;
-            this.checkBoxKoiCarpM2.Location = new System.Drawing.Point(337, 192);
-            this.checkBoxKoiCarpM2.Name = "checkBoxKoiCarpM2";
-            this.checkBoxKoiCarpM2.Size = new System.Drawing.Size(110, 17);
-            this.checkBoxKoiCarpM2.TabIndex = 53;
-            this.checkBoxKoiCarpM2.Text = "Koi Carp Machine";
-            this.checkBoxKoiCarpM2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKoiCarp2
-            // 
-            this.checkBoxKoiCarp2.AutoCheck = false;
-            this.checkBoxKoiCarp2.AutoSize = true;
-            this.checkBoxKoiCarp2.Location = new System.Drawing.Point(337, 169);
-            this.checkBoxKoiCarp2.Name = "checkBoxKoiCarp2";
-            this.checkBoxKoiCarp2.Size = new System.Drawing.Size(66, 17);
-            this.checkBoxKoiCarp2.TabIndex = 52;
-            this.checkBoxKoiCarp2.Text = "Koi Carp";
-            this.checkBoxKoiCarp2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxKillifish2
-            // 
-            this.checkBoxKillifish2.AutoCheck = false;
-            this.checkBoxKillifish2.AutoSize = true;
-            this.checkBoxKillifish2.Location = new System.Drawing.Point(337, 146);
-            this.checkBoxKillifish2.Name = "checkBoxKillifish2";
-            this.checkBoxKillifish2.Size = new System.Drawing.Size(57, 17);
-            this.checkBoxKillifish2.TabIndex = 51;
-            this.checkBoxKillifish2.Text = "Killifish";
-            this.checkBoxKillifish2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCarp2
-            // 
-            this.checkBoxCarp2.AutoCheck = false;
-            this.checkBoxCarp2.AutoSize = true;
-            this.checkBoxCarp2.Location = new System.Drawing.Point(337, 77);
-            this.checkBoxCarp2.Name = "checkBoxCarp2";
-            this.checkBoxCarp2.Size = new System.Drawing.Size(48, 17);
-            this.checkBoxCarp2.TabIndex = 50;
-            this.checkBoxCarp2.Text = "Carp";
-            this.checkBoxCarp2.UseVisualStyleBackColor = true;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(334, 10);
+            this.label6.Location = new System.Drawing.Point(199, 10);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(123, 13);
             this.label6.TabIndex = 49;
@@ -1418,7 +898,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(185, 283);
+            this.label5.Location = new System.Drawing.Point(200, 365);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 13);
             this.label5.TabIndex = 48;
@@ -1428,7 +908,7 @@
             // 
             this.checkBoxStarfishM2.AutoCheck = false;
             this.checkBoxStarfishM2.AutoSize = true;
-            this.checkBoxStarfishM2.Location = new System.Drawing.Point(188, 215);
+            this.checkBoxStarfishM2.Location = new System.Drawing.Point(202, 293);
             this.checkBoxStarfishM2.Name = "checkBoxStarfishM2";
             this.checkBoxStarfishM2.Size = new System.Drawing.Size(105, 17);
             this.checkBoxStarfishM2.TabIndex = 47;
@@ -1439,7 +919,7 @@
             // 
             this.checkBoxMackerelM2.AutoCheck = false;
             this.checkBoxMackerelM2.AutoSize = true;
-            this.checkBoxMackerelM2.Location = new System.Drawing.Point(188, 169);
+            this.checkBoxMackerelM2.Location = new System.Drawing.Point(202, 247);
             this.checkBoxMackerelM2.Name = "checkBoxMackerelM2";
             this.checkBoxMackerelM2.Size = new System.Drawing.Size(114, 17);
             this.checkBoxMackerelM2.TabIndex = 46;
@@ -1450,7 +930,7 @@
             // 
             this.checkBoxBreamM2.AutoCheck = false;
             this.checkBoxBreamM2.AutoSize = true;
-            this.checkBoxBreamM2.Location = new System.Drawing.Point(188, 100);
+            this.checkBoxBreamM2.Location = new System.Drawing.Point(202, 224);
             this.checkBoxBreamM2.Name = "checkBoxBreamM2";
             this.checkBoxBreamM2.Size = new System.Drawing.Size(100, 17);
             this.checkBoxBreamM2.TabIndex = 45;
@@ -1461,7 +941,7 @@
             // 
             this.checkBoxBlowfishM2.AutoCheck = false;
             this.checkBoxBlowfishM2.AutoSize = true;
-            this.checkBoxBlowfishM2.Location = new System.Drawing.Point(188, 77);
+            this.checkBoxBlowfishM2.Location = new System.Drawing.Point(202, 201);
             this.checkBoxBlowfishM2.Name = "checkBoxBlowfishM2";
             this.checkBoxBlowfishM2.Size = new System.Drawing.Size(109, 17);
             this.checkBoxBlowfishM2.TabIndex = 44;
@@ -1471,7 +951,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 444);
+            this.label4.Location = new System.Drawing.Point(11, 10);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 13);
             this.label4.TabIndex = 42;
@@ -1480,7 +960,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 283);
+            this.label3.Location = new System.Drawing.Point(11, 180);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 13);
             this.label3.TabIndex = 39;
@@ -1489,20 +969,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(185, 10);
+            this.label2.Location = new System.Drawing.Point(199, 180);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Desert: Oil Field";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Flooded City";
             // 
             // tabPage2
             // 
@@ -4161,7 +3632,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "IntelDisplay";
-            this.Text = "NieR:Automata Intel Tracker v0.6";
+            this.Text = "NieR:Automata Intel Tracker v0.7";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -4201,16 +3672,8 @@
 
         #endregion
         private System.Windows.Forms.Label debugValue;
-        private System.Windows.Forms.CheckBox checkBoxMackerelM;
         private System.Windows.Forms.CheckBox checkBoxCoelacanthM;
-        private System.Windows.Forms.CheckBox checkBoxBreamM;
-        private System.Windows.Forms.CheckBox checkBoxStarfishM;
         private System.Windows.Forms.CheckBox checkBoxSwordfishM;
-        private System.Windows.Forms.CheckBox checkBoxBlowfishM;
-        private System.Windows.Forms.CheckBox checkBoxBloatFishM;
-        private System.Windows.Forms.CheckBox checkBoxCarpM;
-        private System.Windows.Forms.CheckBox checkBoxArapaimaM;
-        private System.Windows.Forms.CheckBox checkBoxKoiCarpM;
         private System.Windows.Forms.CheckBox checkBoxKillifishM;
         private System.Windows.Forms.CheckBox checkBoxBaskingShark;
         private System.Windows.Forms.CheckBox checkBoxBream;
@@ -4226,17 +3689,8 @@
         private System.Windows.Forms.CheckBox checkBoxOilSardine;
         private System.Windows.Forms.CheckBox checkBoxArapaima;
         private System.Windows.Forms.CheckBox checkBoxFreshwaterRay;
-        private System.Windows.Forms.CheckBox checkBoxFurCarp;
-        private System.Windows.Forms.CheckBox checkBoxKoiCarp;
         private System.Windows.Forms.CheckBox checkBoxBloatFish;
-        private System.Windows.Forms.CheckBox checkBoxCarp;
-        private System.Windows.Forms.CheckBox checkBoxKillifish;
         private System.Windows.Forms.CheckBox checkBoxTwinfish;
-        private System.Windows.Forms.CheckBox checkBoxArowana;
-        private System.Windows.Forms.CheckBox checkBoxBrokenFirearm2;
-        private System.Windows.Forms.CheckBox checkBoxBattery;
-        private System.Windows.Forms.CheckBox checkBoxGasCylinder2;
-        private System.Windows.Forms.CheckBox checkBoxTire;
         private System.Windows.Forms.CheckBox checkBoxMachineHead;
         private System.Windows.Forms.CheckBox checkBoxFreshwaterRayM;
         private System.Windows.Forms.CheckBox checkBoxBaskingSharkM;
@@ -4245,7 +3699,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -4253,40 +3706,17 @@
         private System.Windows.Forms.CheckBox checkBoxMackerelM2;
         private System.Windows.Forms.CheckBox checkBoxBreamM2;
         private System.Windows.Forms.CheckBox checkBoxBlowfishM2;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.CheckBox checkBoxKillifish6;
         private System.Windows.Forms.CheckBox checkBoxKoiCarp6;
         private System.Windows.Forms.CheckBox checkBoxCarp6;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.CheckBox checkBoxKoiCarpM4;
-        private System.Windows.Forms.CheckBox checkBoxKoiCarp4;
-        private System.Windows.Forms.CheckBox checkBoxKillifish4;
-        private System.Windows.Forms.CheckBox checkBoxCarpM3;
-        private System.Windows.Forms.CheckBox checkBoxCarp4;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox checkBoxKoiCarp5;
-        private System.Windows.Forms.CheckBox checkBoxKillifish5;
-        private System.Windows.Forms.CheckBox checkBoxGasCylinder3;
         private System.Windows.Forms.CheckBox checkBoxFurCarp2;
         private System.Windows.Forms.CheckBox checkBoxCarpM4;
-        private System.Windows.Forms.CheckBox checkBoxCarp5;
         private System.Windows.Forms.CheckBox checkBoxBloatFishM3;
-        private System.Windows.Forms.CheckBox checkBoxArowana3;
         private System.Windows.Forms.CheckBox checkBoxArapaimaM3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.CheckBox checkBoxKoiCarpM3;
-        private System.Windows.Forms.CheckBox checkBoxKoiCarp3;
-        private System.Windows.Forms.CheckBox checkBoxKillifish3;
-        private System.Windows.Forms.CheckBox checkBoxCarpM2;
-        private System.Windows.Forms.CheckBox checkBoxCarp3;
-        private System.Windows.Forms.CheckBox checkBoxBloatFishM2;
-        private System.Windows.Forms.CheckBox checkBoxArowana2;
-        private System.Windows.Forms.CheckBox checkBoxArapaimaM2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox checkBoxKoiCarpM2;
-        private System.Windows.Forms.CheckBox checkBoxKoiCarp2;
-        private System.Windows.Forms.CheckBox checkBoxKillifish2;
-        private System.Windows.Forms.CheckBox checkBoxCarp2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label12;
