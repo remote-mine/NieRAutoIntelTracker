@@ -3972,7 +3972,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "IntelDisplay";
-            this.Text = "NieR:Automata Intel Tracker v0.7";
+            this.Text = "NieR:Automata Intel Tracker v0.8";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
