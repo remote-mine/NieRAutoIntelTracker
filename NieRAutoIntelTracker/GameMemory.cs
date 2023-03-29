@@ -23,6 +23,8 @@ namespace NieRAutoIntelTracker
         public byte[] IntelFishOld { get; set; }
         public byte[] IntelUnitCurrent { get; set; }
         public byte[] IntelUnitOld { get; set; }
+        public String phaseNameCurrent { get; set; }
+        public String phaseNameOld { get; set; }
 
         private IntelDisplay _intelDisplay;
 
@@ -36,6 +38,7 @@ namespace NieRAutoIntelTracker
             _fishCountDisplay = fishCountDisplay;
             IntelFishCurrent = new byte[1];
             IntelUnitCurrent = new byte[1];
+            phaseNameCurrent = "";
         }
 
         public void StartMonitoring()
@@ -96,22 +99,26 @@ namespace NieRAutoIntelTracker
 
                     DeepPointer FishPtr;
                     DeepPointer UnitIntelPtr;
+                    DeepPointer PhaseNamePtr;
                     var memSize = ((ProcessModule)coll.Current).ModuleMemorySize;
                     switch (memSize)
                     {
                         case 106266624:
                             FishPtr = new DeepPointer(0x198452C); // 0x197C460
                             UnitIntelPtr = new DeepPointer(0x19844C8);
+                            PhaseNamePtr = new DeepPointer(0x1101D30);
                             _intelDisplay.updateComponentDisplayStatus("v1.01");
                             break;
                         case 26177536:
                             FishPtr = new DeepPointer(0x149452C);
                             UnitIntelPtr = new DeepPointer(0x14944C8);
+                            PhaseNamePtr = new DeepPointer(0xF64B10);
                             _intelDisplay.updateComponentDisplayStatus("v1.02");
                             break;
                         default:
                             FishPtr = new DeepPointer(0x25AF8AC); // 0x25A77E0
                             UnitIntelPtr = new DeepPointer(0x25AF848);
+                            PhaseNamePtr = new DeepPointer(0x1FEDD48);
                             _intelDisplay.updateComponentDisplayStatus("vdebug");
                             break;
                     }
@@ -135,6 +142,18 @@ namespace NieRAutoIntelTracker
                         if (!IntelUnitCurrent.SequenceEqual(IntelUnitOld))
                         {
                             this._intelDisplay.UpdateUnitIntel(IntelUnitCurrent);
+                        }
+
+                        string tempPhaseName = PhaseNamePtr.DerefString(game, 24, "").Trim();
+                        if (tempPhaseName.Length != 0)
+                        {
+                            phaseNameOld = phaseNameCurrent;
+                            phaseNameCurrent = tempPhaseName;
+                        }
+
+                        if (!phaseNameCurrent.Equals(phaseNameOld))
+                        {
+                            this._intelDisplay.updateEndings(phaseNameCurrent, phaseNameOld);
                         }
 
                         Thread.Sleep(SLEEP_TIME);
