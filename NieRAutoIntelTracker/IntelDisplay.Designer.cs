@@ -86,19 +86,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textProgressBarEmil = new NieRAutoIntelTracker.TextProgressBar();
-            this.textProgressBarAmicable = new NieRAutoIntelTracker.TextProgressBar();
-            this.textProgressBarPeculiar = new NieRAutoIntelTracker.TextProgressBar();
-            this.textProgressBarAndroid = new NieRAutoIntelTracker.TextProgressBar();
-            this.textProgressBarSpecial = new NieRAutoIntelTracker.TextProgressBar();
-            this.textProgressBarEMP = new NieRAutoIntelTracker.TextProgressBar();
-            this.textProgressBarEnhanced = new NieRAutoIntelTracker.TextProgressBar();
-            this.textProgressBarVillage = new NieRAutoIntelTracker.TextProgressBar();
-            this.textProgressBarFactory = new NieRAutoIntelTracker.TextProgressBar();
-            this.textProgressBarForest = new NieRAutoIntelTracker.TextProgressBar();
-            this.textProgressBarPark = new NieRAutoIntelTracker.TextProgressBar();
-            this.textProgressBarDesert = new NieRAutoIntelTracker.TextProgressBar();
-            this.textProgressBarStd = new NieRAutoIntelTracker.TextProgressBar();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPageStd = new System.Windows.Forms.TabPage();
             this.checkBoxMediumQuadrupedstanding = new System.Windows.Forms.CheckBox();
@@ -300,9 +287,52 @@
             this.checkBoxEmilEmil = new System.Windows.Forms.CheckBox();
             this.checkBoxEmilEmilClonesFlying = new System.Windows.Forms.CheckBox();
             this.checkBoxEmilEmilClonesGround = new System.Windows.Forms.CheckBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.checkBoxEndingA = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingB = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingC = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingD = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingE = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingF = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingG = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingH = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingI = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingJ = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingK = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingL = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingM = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingN = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingO = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingP = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingQ = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingR = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingS = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingT = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingU = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingV = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingW = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingX = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingY = new System.Windows.Forms.CheckBox();
+            this.checkBoxEndingZ = new System.Windows.Forms.CheckBox();
             this.debugValue2 = new System.Windows.Forms.Label();
             this.labelConnectionStatus = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textProgressBarEndings = new NieRAutoIntelTracker.TextProgressBar();
             this.textProgressBarUnit = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarEmil = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarAmicable = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarPeculiar = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarAndroid = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarSpecial = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarEMP = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarEnhanced = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarVillage = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarFactory = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarForest = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarPark = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarDesert = new NieRAutoIntelTracker.TextProgressBar();
+            this.textProgressBarStd = new NieRAutoIntelTracker.TextProgressBar();
             this.textProgressBarFish = new NieRAutoIntelTracker.TextProgressBar();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -321,13 +351,14 @@
             this.tabPagePeculiar.SuspendLayout();
             this.tabPageAmicable.SuspendLayout();
             this.tabPageEmil.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // debugValue
             // 
             this.debugValue.AutoSize = true;
             this.debugValue.Enabled = false;
-            this.debugValue.Location = new System.Drawing.Point(337, 10);
+            this.debugValue.Location = new System.Drawing.Point(514, 33);
             this.debugValue.Name = "debugValue";
             this.debugValue.Size = new System.Drawing.Size(13, 13);
             this.debugValue.TabIndex = 8;
@@ -601,6 +632,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(0, 46);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Multiline = true;
@@ -999,188 +1031,6 @@
             this.tabPage2.Size = new System.Drawing.Size(798, 585);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Unit Data";
-            // 
-            // textProgressBarEmil
-            // 
-            this.textProgressBarEmil.CustomText = "???";
-            this.textProgressBarEmil.Location = new System.Drawing.Point(680, 91);
-            this.textProgressBarEmil.Maximum = 3;
-            this.textProgressBarEmil.Name = "textProgressBarEmil";
-            this.textProgressBarEmil.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarEmil.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarEmil.Step = 1;
-            this.textProgressBarEmil.TabIndex = 140;
-            this.textProgressBarEmil.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarEmil.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarEmil.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
-            // 
-            // textProgressBarAmicable
-            // 
-            this.textProgressBarAmicable.CustomText = "Amicable";
-            this.textProgressBarAmicable.Location = new System.Drawing.Point(530, 91);
-            this.textProgressBarAmicable.Maximum = 13;
-            this.textProgressBarAmicable.Name = "textProgressBarAmicable";
-            this.textProgressBarAmicable.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarAmicable.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarAmicable.Step = 1;
-            this.textProgressBarAmicable.TabIndex = 139;
-            this.textProgressBarAmicable.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarAmicable.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarAmicable.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
-            // 
-            // textProgressBarPeculiar
-            // 
-            this.textProgressBarPeculiar.CustomText = "Peculiar";
-            this.textProgressBarPeculiar.Location = new System.Drawing.Point(360, 91);
-            this.textProgressBarPeculiar.Maximum = 16;
-            this.textProgressBarPeculiar.Name = "textProgressBarPeculiar";
-            this.textProgressBarPeculiar.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarPeculiar.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarPeculiar.Step = 1;
-            this.textProgressBarPeculiar.TabIndex = 138;
-            this.textProgressBarPeculiar.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarPeculiar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarPeculiar.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
-            // 
-            // textProgressBarAndroid
-            // 
-            this.textProgressBarAndroid.CustomText = "Androids";
-            this.textProgressBarAndroid.Location = new System.Drawing.Point(190, 91);
-            this.textProgressBarAndroid.Maximum = 13;
-            this.textProgressBarAndroid.Name = "textProgressBarAndroid";
-            this.textProgressBarAndroid.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarAndroid.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarAndroid.Step = 1;
-            this.textProgressBarAndroid.TabIndex = 137;
-            this.textProgressBarAndroid.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarAndroid.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarAndroid.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
-            // 
-            // textProgressBarSpecial
-            // 
-            this.textProgressBarSpecial.CustomText = "Special";
-            this.textProgressBarSpecial.Location = new System.Drawing.Point(20, 91);
-            this.textProgressBarSpecial.Maximum = 26;
-            this.textProgressBarSpecial.Name = "textProgressBarSpecial";
-            this.textProgressBarSpecial.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarSpecial.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarSpecial.Step = 1;
-            this.textProgressBarSpecial.TabIndex = 136;
-            this.textProgressBarSpecial.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarSpecial.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarSpecial.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
-            // 
-            // textProgressBarEMP
-            // 
-            this.textProgressBarEMP.CustomText = "EMP";
-            this.textProgressBarEMP.Location = new System.Drawing.Point(530, 51);
-            this.textProgressBarEMP.Maximum = 4;
-            this.textProgressBarEMP.Name = "textProgressBarEMP";
-            this.textProgressBarEMP.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarEMP.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarEMP.Step = 1;
-            this.textProgressBarEMP.TabIndex = 135;
-            this.textProgressBarEMP.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarEMP.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarEMP.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
-            // 
-            // textProgressBarEnhanced
-            // 
-            this.textProgressBarEnhanced.CustomText = "Enhanced";
-            this.textProgressBarEnhanced.Location = new System.Drawing.Point(360, 51);
-            this.textProgressBarEnhanced.Maximum = 24;
-            this.textProgressBarEnhanced.Name = "textProgressBarEnhanced";
-            this.textProgressBarEnhanced.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarEnhanced.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarEnhanced.Step = 1;
-            this.textProgressBarEnhanced.TabIndex = 134;
-            this.textProgressBarEnhanced.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarEnhanced.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarEnhanced.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
-            // 
-            // textProgressBarVillage
-            // 
-            this.textProgressBarVillage.CustomText = "Village";
-            this.textProgressBarVillage.Location = new System.Drawing.Point(190, 51);
-            this.textProgressBarVillage.Maximum = 17;
-            this.textProgressBarVillage.Name = "textProgressBarVillage";
-            this.textProgressBarVillage.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarVillage.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarVillage.Step = 1;
-            this.textProgressBarVillage.TabIndex = 133;
-            this.textProgressBarVillage.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarVillage.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarVillage.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
-            // 
-            // textProgressBarFactory
-            // 
-            this.textProgressBarFactory.CustomText = "Factory";
-            this.textProgressBarFactory.Location = new System.Drawing.Point(20, 51);
-            this.textProgressBarFactory.Maximum = 7;
-            this.textProgressBarFactory.Name = "textProgressBarFactory";
-            this.textProgressBarFactory.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarFactory.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarFactory.Step = 1;
-            this.textProgressBarFactory.TabIndex = 132;
-            this.textProgressBarFactory.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarFactory.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarFactory.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
-            // 
-            // textProgressBarForest
-            // 
-            this.textProgressBarForest.CustomText = "Forest";
-            this.textProgressBarForest.Location = new System.Drawing.Point(530, 11);
-            this.textProgressBarForest.Maximum = 10;
-            this.textProgressBarForest.Name = "textProgressBarForest";
-            this.textProgressBarForest.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarForest.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarForest.Step = 1;
-            this.textProgressBarForest.TabIndex = 131;
-            this.textProgressBarForest.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarForest.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarForest.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
-            // 
-            // textProgressBarPark
-            // 
-            this.textProgressBarPark.CustomText = "Park";
-            this.textProgressBarPark.Location = new System.Drawing.Point(360, 11);
-            this.textProgressBarPark.Maximum = 9;
-            this.textProgressBarPark.Name = "textProgressBarPark";
-            this.textProgressBarPark.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarPark.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarPark.Step = 1;
-            this.textProgressBarPark.TabIndex = 130;
-            this.textProgressBarPark.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarPark.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarPark.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
-            // 
-            // textProgressBarDesert
-            // 
-            this.textProgressBarDesert.CustomText = "Desert";
-            this.textProgressBarDesert.Location = new System.Drawing.Point(190, 11);
-            this.textProgressBarDesert.Maximum = 11;
-            this.textProgressBarDesert.Name = "textProgressBarDesert";
-            this.textProgressBarDesert.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarDesert.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarDesert.Step = 1;
-            this.textProgressBarDesert.TabIndex = 129;
-            this.textProgressBarDesert.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarDesert.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarDesert.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
-            // 
-            // textProgressBarStd
-            // 
-            this.textProgressBarStd.CustomText = "Standard";
-            this.textProgressBarStd.Location = new System.Drawing.Point(20, 11);
-            this.textProgressBarStd.Maximum = 35;
-            this.textProgressBarStd.Name = "textProgressBarStd";
-            this.textProgressBarStd.ProgressColor = System.Drawing.Color.LightGreen;
-            this.textProgressBarStd.Size = new System.Drawing.Size(100, 23);
-            this.textProgressBarStd.Step = 1;
-            this.textProgressBarStd.TabIndex = 52;
-            this.textProgressBarStd.TextColor = System.Drawing.Color.Black;
-            this.textProgressBarStd.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textProgressBarStd.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
             // 
             // tabControl2
             // 
@@ -3567,11 +3417,284 @@
             this.checkBoxEmilEmilClonesGround.Text = "Emil Clones (Ground)";
             this.checkBoxEmilEmilClonesGround.UseVisualStyleBackColor = true;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.Controls.Add(this.button1);
+            this.tabPage3.Controls.Add(this.checkBoxEndingA);
+            this.tabPage3.Controls.Add(this.checkBoxEndingB);
+            this.tabPage3.Controls.Add(this.checkBoxEndingC);
+            this.tabPage3.Controls.Add(this.checkBoxEndingD);
+            this.tabPage3.Controls.Add(this.checkBoxEndingE);
+            this.tabPage3.Controls.Add(this.checkBoxEndingF);
+            this.tabPage3.Controls.Add(this.checkBoxEndingG);
+            this.tabPage3.Controls.Add(this.checkBoxEndingH);
+            this.tabPage3.Controls.Add(this.checkBoxEndingI);
+            this.tabPage3.Controls.Add(this.checkBoxEndingJ);
+            this.tabPage3.Controls.Add(this.checkBoxEndingK);
+            this.tabPage3.Controls.Add(this.checkBoxEndingL);
+            this.tabPage3.Controls.Add(this.checkBoxEndingM);
+            this.tabPage3.Controls.Add(this.checkBoxEndingN);
+            this.tabPage3.Controls.Add(this.checkBoxEndingO);
+            this.tabPage3.Controls.Add(this.checkBoxEndingP);
+            this.tabPage3.Controls.Add(this.checkBoxEndingQ);
+            this.tabPage3.Controls.Add(this.checkBoxEndingR);
+            this.tabPage3.Controls.Add(this.checkBoxEndingS);
+            this.tabPage3.Controls.Add(this.checkBoxEndingT);
+            this.tabPage3.Controls.Add(this.checkBoxEndingU);
+            this.tabPage3.Controls.Add(this.checkBoxEndingV);
+            this.tabPage3.Controls.Add(this.checkBoxEndingW);
+            this.tabPage3.Controls.Add(this.checkBoxEndingX);
+            this.tabPage3.Controls.Add(this.checkBoxEndingY);
+            this.tabPage3.Controls.Add(this.checkBoxEndingZ);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(798, 585);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Endings";
+            // 
+            // checkBoxEndingA
+            // 
+            this.checkBoxEndingA.AutoSize = true;
+            this.checkBoxEndingA.Location = new System.Drawing.Point(14, 14);
+            this.checkBoxEndingA.Name = "checkBoxEndingA";
+            this.checkBoxEndingA.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingA.TabIndex = 23;
+            this.checkBoxEndingA.Text = "A";
+            this.checkBoxEndingA.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingB
+            // 
+            this.checkBoxEndingB.Location = new System.Drawing.Point(149, 14);
+            this.checkBoxEndingB.Name = "checkBoxEndingB";
+            this.checkBoxEndingB.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingB.TabIndex = 23;
+            this.checkBoxEndingB.Text = "B";
+            this.checkBoxEndingB.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingC
+            // 
+            this.checkBoxEndingC.Location = new System.Drawing.Point(284, 14);
+            this.checkBoxEndingC.Name = "checkBoxEndingC";
+            this.checkBoxEndingC.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingC.TabIndex = 23;
+            this.checkBoxEndingC.Text = "C";
+            this.checkBoxEndingC.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingD
+            // 
+            this.checkBoxEndingD.Location = new System.Drawing.Point(419, 14);
+            this.checkBoxEndingD.Name = "checkBoxEndingD";
+            this.checkBoxEndingD.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingD.TabIndex = 23;
+            this.checkBoxEndingD.Text = "D";
+            this.checkBoxEndingD.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingE
+            // 
+            this.checkBoxEndingE.Location = new System.Drawing.Point(554, 14);
+            this.checkBoxEndingE.Name = "checkBoxEndingE";
+            this.checkBoxEndingE.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingE.TabIndex = 23;
+            this.checkBoxEndingE.Text = "E";
+            this.checkBoxEndingE.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingF
+            // 
+            this.checkBoxEndingF.Location = new System.Drawing.Point(689, 14);
+            this.checkBoxEndingF.Name = "checkBoxEndingF";
+            this.checkBoxEndingF.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingF.TabIndex = 23;
+            this.checkBoxEndingF.Text = "F";
+            this.checkBoxEndingF.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingG
+            // 
+            this.checkBoxEndingG.Location = new System.Drawing.Point(14, 60);
+            this.checkBoxEndingG.Name = "checkBoxEndingG";
+            this.checkBoxEndingG.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingG.TabIndex = 23;
+            this.checkBoxEndingG.Text = "G";
+            this.checkBoxEndingG.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingH
+            // 
+            this.checkBoxEndingH.Location = new System.Drawing.Point(149, 60);
+            this.checkBoxEndingH.Name = "checkBoxEndingH";
+            this.checkBoxEndingH.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingH.TabIndex = 23;
+            this.checkBoxEndingH.Text = "H";
+            this.checkBoxEndingH.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingI
+            // 
+            this.checkBoxEndingI.Location = new System.Drawing.Point(284, 60);
+            this.checkBoxEndingI.Name = "checkBoxEndingI";
+            this.checkBoxEndingI.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingI.TabIndex = 23;
+            this.checkBoxEndingI.Text = "I";
+            this.checkBoxEndingI.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingJ
+            // 
+            this.checkBoxEndingJ.Location = new System.Drawing.Point(419, 60);
+            this.checkBoxEndingJ.Name = "checkBoxEndingJ";
+            this.checkBoxEndingJ.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingJ.TabIndex = 23;
+            this.checkBoxEndingJ.Text = "J";
+            this.checkBoxEndingJ.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingK
+            // 
+            this.checkBoxEndingK.Location = new System.Drawing.Point(554, 60);
+            this.checkBoxEndingK.Name = "checkBoxEndingK";
+            this.checkBoxEndingK.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingK.TabIndex = 23;
+            this.checkBoxEndingK.Text = "K";
+            this.checkBoxEndingK.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingL
+            // 
+            this.checkBoxEndingL.Location = new System.Drawing.Point(689, 60);
+            this.checkBoxEndingL.Name = "checkBoxEndingL";
+            this.checkBoxEndingL.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingL.TabIndex = 23;
+            this.checkBoxEndingL.Text = "L";
+            this.checkBoxEndingL.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingM
+            // 
+            this.checkBoxEndingM.Location = new System.Drawing.Point(14, 106);
+            this.checkBoxEndingM.Name = "checkBoxEndingM";
+            this.checkBoxEndingM.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingM.TabIndex = 23;
+            this.checkBoxEndingM.Text = "M";
+            this.checkBoxEndingM.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingN
+            // 
+            this.checkBoxEndingN.Location = new System.Drawing.Point(149, 106);
+            this.checkBoxEndingN.Name = "checkBoxEndingN";
+            this.checkBoxEndingN.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingN.TabIndex = 23;
+            this.checkBoxEndingN.Text = "N";
+            this.checkBoxEndingN.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingO
+            // 
+            this.checkBoxEndingO.Location = new System.Drawing.Point(284, 106);
+            this.checkBoxEndingO.Name = "checkBoxEndingO";
+            this.checkBoxEndingO.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingO.TabIndex = 23;
+            this.checkBoxEndingO.Text = "O";
+            this.checkBoxEndingO.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingP
+            // 
+            this.checkBoxEndingP.Location = new System.Drawing.Point(419, 106);
+            this.checkBoxEndingP.Name = "checkBoxEndingP";
+            this.checkBoxEndingP.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingP.TabIndex = 23;
+            this.checkBoxEndingP.Text = "P";
+            this.checkBoxEndingP.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingQ
+            // 
+            this.checkBoxEndingQ.Location = new System.Drawing.Point(554, 106);
+            this.checkBoxEndingQ.Name = "checkBoxEndingQ";
+            this.checkBoxEndingQ.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingQ.TabIndex = 23;
+            this.checkBoxEndingQ.Text = "Q";
+            this.checkBoxEndingQ.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingR
+            // 
+            this.checkBoxEndingR.Location = new System.Drawing.Point(689, 106);
+            this.checkBoxEndingR.Name = "checkBoxEndingR";
+            this.checkBoxEndingR.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingR.TabIndex = 23;
+            this.checkBoxEndingR.Text = "R";
+            this.checkBoxEndingR.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingS
+            // 
+            this.checkBoxEndingS.Location = new System.Drawing.Point(14, 152);
+            this.checkBoxEndingS.Name = "checkBoxEndingS";
+            this.checkBoxEndingS.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingS.TabIndex = 23;
+            this.checkBoxEndingS.Text = "S";
+            this.checkBoxEndingS.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingT
+            // 
+            this.checkBoxEndingT.Location = new System.Drawing.Point(149, 152);
+            this.checkBoxEndingT.Name = "checkBoxEndingT";
+            this.checkBoxEndingT.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingT.TabIndex = 23;
+            this.checkBoxEndingT.Text = "T";
+            this.checkBoxEndingT.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingU
+            // 
+            this.checkBoxEndingU.Location = new System.Drawing.Point(284, 152);
+            this.checkBoxEndingU.Name = "checkBoxEndingU";
+            this.checkBoxEndingU.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingU.TabIndex = 23;
+            this.checkBoxEndingU.Text = "U";
+            this.checkBoxEndingU.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingV
+            // 
+            this.checkBoxEndingV.Location = new System.Drawing.Point(419, 152);
+            this.checkBoxEndingV.Name = "checkBoxEndingV";
+            this.checkBoxEndingV.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingV.TabIndex = 23;
+            this.checkBoxEndingV.Text = "V";
+            this.checkBoxEndingV.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingW
+            // 
+            this.checkBoxEndingW.Location = new System.Drawing.Point(554, 152);
+            this.checkBoxEndingW.Name = "checkBoxEndingW";
+            this.checkBoxEndingW.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingW.TabIndex = 23;
+            this.checkBoxEndingW.Text = "W";
+            this.checkBoxEndingW.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingX
+            // 
+            this.checkBoxEndingX.Location = new System.Drawing.Point(689, 152);
+            this.checkBoxEndingX.Name = "checkBoxEndingX";
+            this.checkBoxEndingX.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingX.TabIndex = 23;
+            this.checkBoxEndingX.Text = "X";
+            this.checkBoxEndingX.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingY
+            // 
+            this.checkBoxEndingY.Location = new System.Drawing.Point(284, 198);
+            this.checkBoxEndingY.Name = "checkBoxEndingY";
+            this.checkBoxEndingY.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingY.TabIndex = 23;
+            this.checkBoxEndingY.Text = "Y";
+            this.checkBoxEndingY.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
+            // checkBoxEndingZ
+            // 
+            this.checkBoxEndingZ.Location = new System.Drawing.Point(419, 198);
+            this.checkBoxEndingZ.Name = "checkBoxEndingZ";
+            this.checkBoxEndingZ.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxEndingZ.TabIndex = 23;
+            this.checkBoxEndingZ.Text = "Z";
+            this.checkBoxEndingZ.CheckedChanged += new System.EventHandler(this.manualEndingChanged);
+            // 
             // debugValue2
             // 
             this.debugValue2.AutoSize = true;
             this.debugValue2.Enabled = false;
-            this.debugValue2.Location = new System.Drawing.Point(337, 33);
+            this.debugValue2.Location = new System.Drawing.Point(618, 33);
             this.debugValue2.Name = "debugValue2";
             this.debugValue2.Size = new System.Drawing.Size(13, 13);
             this.debugValue2.TabIndex = 50;
@@ -3589,6 +3712,40 @@
             this.labelConnectionStatus.Text = "Checking for game process";
             this.labelConnectionStatus.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(225, 257);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 23);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Reset All Endings";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(370, 257);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(129, 23);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "Check All Endings";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textProgressBarEndings
+            // 
+            this.textProgressBarEndings.CustomText = "Endings";
+            this.textProgressBarEndings.Location = new System.Drawing.Point(280, 10);
+            this.textProgressBarEndings.Maximum = 26;
+            this.textProgressBarEndings.Name = "textProgressBarEndings";
+            this.textProgressBarEndings.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarEndings.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarEndings.Step = 1;
+            this.textProgressBarEndings.TabIndex = 52;
+            this.textProgressBarEndings.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarEndings.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarEndings.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
             // textProgressBarUnit
             // 
             this.textProgressBarUnit.CustomText = "Unit";
@@ -3602,6 +3759,188 @@
             this.textProgressBarUnit.TextColor = System.Drawing.Color.Black;
             this.textProgressBarUnit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textProgressBarUnit.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarEmil
+            // 
+            this.textProgressBarEmil.CustomText = "???";
+            this.textProgressBarEmil.Location = new System.Drawing.Point(680, 91);
+            this.textProgressBarEmil.Maximum = 3;
+            this.textProgressBarEmil.Name = "textProgressBarEmil";
+            this.textProgressBarEmil.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarEmil.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarEmil.Step = 1;
+            this.textProgressBarEmil.TabIndex = 140;
+            this.textProgressBarEmil.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarEmil.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarEmil.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarAmicable
+            // 
+            this.textProgressBarAmicable.CustomText = "Amicable";
+            this.textProgressBarAmicable.Location = new System.Drawing.Point(530, 91);
+            this.textProgressBarAmicable.Maximum = 13;
+            this.textProgressBarAmicable.Name = "textProgressBarAmicable";
+            this.textProgressBarAmicable.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarAmicable.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarAmicable.Step = 1;
+            this.textProgressBarAmicable.TabIndex = 139;
+            this.textProgressBarAmicable.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarAmicable.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarAmicable.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarPeculiar
+            // 
+            this.textProgressBarPeculiar.CustomText = "Peculiar";
+            this.textProgressBarPeculiar.Location = new System.Drawing.Point(360, 91);
+            this.textProgressBarPeculiar.Maximum = 16;
+            this.textProgressBarPeculiar.Name = "textProgressBarPeculiar";
+            this.textProgressBarPeculiar.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarPeculiar.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarPeculiar.Step = 1;
+            this.textProgressBarPeculiar.TabIndex = 138;
+            this.textProgressBarPeculiar.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarPeculiar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarPeculiar.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarAndroid
+            // 
+            this.textProgressBarAndroid.CustomText = "Androids";
+            this.textProgressBarAndroid.Location = new System.Drawing.Point(190, 91);
+            this.textProgressBarAndroid.Maximum = 13;
+            this.textProgressBarAndroid.Name = "textProgressBarAndroid";
+            this.textProgressBarAndroid.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarAndroid.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarAndroid.Step = 1;
+            this.textProgressBarAndroid.TabIndex = 137;
+            this.textProgressBarAndroid.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarAndroid.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarAndroid.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarSpecial
+            // 
+            this.textProgressBarSpecial.CustomText = "Special";
+            this.textProgressBarSpecial.Location = new System.Drawing.Point(20, 91);
+            this.textProgressBarSpecial.Maximum = 26;
+            this.textProgressBarSpecial.Name = "textProgressBarSpecial";
+            this.textProgressBarSpecial.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarSpecial.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarSpecial.Step = 1;
+            this.textProgressBarSpecial.TabIndex = 136;
+            this.textProgressBarSpecial.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarSpecial.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarSpecial.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarEMP
+            // 
+            this.textProgressBarEMP.CustomText = "EMP";
+            this.textProgressBarEMP.Location = new System.Drawing.Point(530, 51);
+            this.textProgressBarEMP.Maximum = 4;
+            this.textProgressBarEMP.Name = "textProgressBarEMP";
+            this.textProgressBarEMP.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarEMP.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarEMP.Step = 1;
+            this.textProgressBarEMP.TabIndex = 135;
+            this.textProgressBarEMP.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarEMP.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarEMP.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarEnhanced
+            // 
+            this.textProgressBarEnhanced.CustomText = "Enhanced";
+            this.textProgressBarEnhanced.Location = new System.Drawing.Point(360, 51);
+            this.textProgressBarEnhanced.Maximum = 24;
+            this.textProgressBarEnhanced.Name = "textProgressBarEnhanced";
+            this.textProgressBarEnhanced.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarEnhanced.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarEnhanced.Step = 1;
+            this.textProgressBarEnhanced.TabIndex = 134;
+            this.textProgressBarEnhanced.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarEnhanced.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarEnhanced.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarVillage
+            // 
+            this.textProgressBarVillage.CustomText = "Village";
+            this.textProgressBarVillage.Location = new System.Drawing.Point(190, 51);
+            this.textProgressBarVillage.Maximum = 17;
+            this.textProgressBarVillage.Name = "textProgressBarVillage";
+            this.textProgressBarVillage.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarVillage.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarVillage.Step = 1;
+            this.textProgressBarVillage.TabIndex = 133;
+            this.textProgressBarVillage.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarVillage.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarVillage.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarFactory
+            // 
+            this.textProgressBarFactory.CustomText = "Factory";
+            this.textProgressBarFactory.Location = new System.Drawing.Point(20, 51);
+            this.textProgressBarFactory.Maximum = 7;
+            this.textProgressBarFactory.Name = "textProgressBarFactory";
+            this.textProgressBarFactory.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarFactory.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarFactory.Step = 1;
+            this.textProgressBarFactory.TabIndex = 132;
+            this.textProgressBarFactory.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarFactory.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarFactory.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarForest
+            // 
+            this.textProgressBarForest.CustomText = "Forest";
+            this.textProgressBarForest.Location = new System.Drawing.Point(530, 11);
+            this.textProgressBarForest.Maximum = 10;
+            this.textProgressBarForest.Name = "textProgressBarForest";
+            this.textProgressBarForest.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarForest.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarForest.Step = 1;
+            this.textProgressBarForest.TabIndex = 131;
+            this.textProgressBarForest.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarForest.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarForest.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarPark
+            // 
+            this.textProgressBarPark.CustomText = "Park";
+            this.textProgressBarPark.Location = new System.Drawing.Point(360, 11);
+            this.textProgressBarPark.Maximum = 9;
+            this.textProgressBarPark.Name = "textProgressBarPark";
+            this.textProgressBarPark.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarPark.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarPark.Step = 1;
+            this.textProgressBarPark.TabIndex = 130;
+            this.textProgressBarPark.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarPark.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarPark.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarDesert
+            // 
+            this.textProgressBarDesert.CustomText = "Desert";
+            this.textProgressBarDesert.Location = new System.Drawing.Point(190, 11);
+            this.textProgressBarDesert.Maximum = 11;
+            this.textProgressBarDesert.Name = "textProgressBarDesert";
+            this.textProgressBarDesert.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarDesert.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarDesert.Step = 1;
+            this.textProgressBarDesert.TabIndex = 129;
+            this.textProgressBarDesert.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarDesert.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarDesert.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
+            // 
+            // textProgressBarStd
+            // 
+            this.textProgressBarStd.CustomText = "Standard";
+            this.textProgressBarStd.Location = new System.Drawing.Point(20, 11);
+            this.textProgressBarStd.Maximum = 35;
+            this.textProgressBarStd.Name = "textProgressBarStd";
+            this.textProgressBarStd.ProgressColor = System.Drawing.Color.LightGreen;
+            this.textProgressBarStd.Size = new System.Drawing.Size(100, 23);
+            this.textProgressBarStd.Step = 1;
+            this.textProgressBarStd.TabIndex = 52;
+            this.textProgressBarStd.TextColor = System.Drawing.Color.Black;
+            this.textProgressBarStd.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textProgressBarStd.VisualMode = NieRAutoIntelTracker.ProgressBarDisplayMode.TextAndCurrProgress;
             // 
             // textProgressBarFish
             // 
@@ -3623,6 +3962,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 658);
             this.ControlBox = false;
+            this.Controls.Add(this.textProgressBarEndings);
             this.Controls.Add(this.labelConnectionStatus);
             this.Controls.Add(this.debugValue2);
             this.Controls.Add(this.textProgressBarUnit);
@@ -3665,6 +4005,8 @@
             this.tabPageAmicable.PerformLayout();
             this.tabPageEmil.ResumeLayout(false);
             this.tabPageEmil.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3946,5 +4288,35 @@
         private System.Windows.Forms.CheckBox checkBoxVillagePascalFlying;
         private System.Windows.Forms.CheckBox checkBoxSpecialHegel2;
         private System.Windows.Forms.CheckBox checkBoxAndroidYoRHaHeavyArmament2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private TextProgressBar textProgressBarEndings;
+        private System.Windows.Forms.CheckBox checkBoxEndingA;
+        private System.Windows.Forms.CheckBox checkBoxEndingB;
+        private System.Windows.Forms.CheckBox checkBoxEndingC;
+        private System.Windows.Forms.CheckBox checkBoxEndingD;
+        private System.Windows.Forms.CheckBox checkBoxEndingE;
+        private System.Windows.Forms.CheckBox checkBoxEndingF;
+        private System.Windows.Forms.CheckBox checkBoxEndingG;
+        private System.Windows.Forms.CheckBox checkBoxEndingH;
+        private System.Windows.Forms.CheckBox checkBoxEndingI;
+        private System.Windows.Forms.CheckBox checkBoxEndingJ;
+        private System.Windows.Forms.CheckBox checkBoxEndingK;
+        private System.Windows.Forms.CheckBox checkBoxEndingL;
+        private System.Windows.Forms.CheckBox checkBoxEndingM;
+        private System.Windows.Forms.CheckBox checkBoxEndingN;
+        private System.Windows.Forms.CheckBox checkBoxEndingO;
+        private System.Windows.Forms.CheckBox checkBoxEndingP;
+        private System.Windows.Forms.CheckBox checkBoxEndingQ;
+        private System.Windows.Forms.CheckBox checkBoxEndingR;
+        private System.Windows.Forms.CheckBox checkBoxEndingS;
+        private System.Windows.Forms.CheckBox checkBoxEndingT;
+        private System.Windows.Forms.CheckBox checkBoxEndingU;
+        private System.Windows.Forms.CheckBox checkBoxEndingV;
+        private System.Windows.Forms.CheckBox checkBoxEndingW;
+        private System.Windows.Forms.CheckBox checkBoxEndingX;
+        private System.Windows.Forms.CheckBox checkBoxEndingY;
+        private System.Windows.Forms.CheckBox checkBoxEndingZ;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

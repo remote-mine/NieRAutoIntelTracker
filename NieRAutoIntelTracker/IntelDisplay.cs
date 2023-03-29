@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace NieRAutoIntelTracker
 {
@@ -333,9 +334,212 @@ namespace NieRAutoIntelTracker
 #endif
         }
 
+        public void updateEndings(string phaseName, string phaseNameOld)
+        {
+            Debug.WriteLine("[NierIntelTracker] phase name change: " + phaseNameOld + " -> " + phaseName);
+
+            switch (phaseName)
+            {
+                case "EndRoll_A":
+                    this.checkBoxEndingA.Checked = true;
+                    break;
+                case "BackTitle_B":
+                    this.checkBoxEndingB.Checked = true;
+                    break;
+                case "EndRoll_CD":
+                    if (phaseNameOld.Equals("345_D_Tower_A2win_9Shack"))
+                    {
+                        this.checkBoxEndingC.Checked = true;
+                    }
+                    if (phaseNameOld.Equals("340_C_Tower_9Swin"))
+                    {
+                        this.checkBoxEndingD.Checked = true;
+                    }
+                    break;
+                case "start":
+                    if (this.checkBoxEndingC.Checked || phaseNameOld.Equals("340_C_Tower_9Swin"))
+                    {
+                        this.checkBoxEndingD.Checked = true;
+                    }
+                    else if (this.checkBoxEndingD.Checked || phaseNameOld.Equals("345_D_Tower_A2win_9Shack"))
+                    {
+                        this.checkBoxEndingC.Checked = true;
+                    }
+                    break;
+                case "BackTitle_FIN":
+                    this.checkBoxEndingE.Checked = true;
+                    break;
+                case "Ending_F":
+                    this.checkBoxEndingF.Checked = true;
+                    break;
+                case "Ending_G":
+                    this.checkBoxEndingG.Checked = true;
+                    break;
+                case "Ending_H":
+                    this.checkBoxEndingH.Checked = true;
+                    break;
+                case "Ending_I":
+                    this.checkBoxEndingI.Checked = true;
+                    break;
+                case "Ending_J":
+                    this.checkBoxEndingJ.Checked = true;
+                    break;
+                case "Ending_K":
+                    this.checkBoxEndingK.Checked = true;
+                    break;
+                case "Ending_L":
+                    this.checkBoxEndingL.Checked = true;
+                    break;
+                case "Ending_M":
+                    this.checkBoxEndingM.Checked = true;
+                    break;
+                case "Ending_N":
+                    this.checkBoxEndingN.Checked = true;
+                    break;
+                case "Ending_O":
+                    this.checkBoxEndingO.Checked = true;
+                    break;
+                case "Ending_P":
+                    this.checkBoxEndingP.Checked = true;
+                    break;
+                case "Ending_Q":
+                    this.checkBoxEndingQ.Checked = true;
+                    break;
+                case "Ending_R":
+                    this.checkBoxEndingR.Checked = true;
+                    break;
+                case "Ending_S":
+                    this.checkBoxEndingS.Checked = true;
+                    break;
+                case "Ending_T":
+                    this.checkBoxEndingT.Checked = true;
+                    break;
+                case "Ending_U":
+                    this.checkBoxEndingU.Checked = true;
+                    break;
+                case "Ending_V":
+                    this.checkBoxEndingV.Checked = true;
+                    break;
+                case "Ending_W":
+                    this.checkBoxEndingW.Checked = true;
+                    break;
+                case "Ending_X":
+                    this.checkBoxEndingX.Checked = true;
+                    break;
+                case "Ending_Y":
+                    this.checkBoxEndingY.Checked = true;
+                    break;
+                case "Ending_Z":
+                    this.checkBoxEndingZ.Checked = true;
+                    break;
+                default:
+                    Debug.WriteLine("[NierIntelTracker] phase name skipped: " + phaseName);
+                    break;
+            }
+
+            updateEndingCount();
+        }
+
+        public void updateEndingCount()
+        {
+            this.textProgressBarEndings.Value = Convert.ToInt32(this.checkBoxEndingA.Checked)
+                + Convert.ToInt32(this.checkBoxEndingB.Checked)
+                + Convert.ToInt32(this.checkBoxEndingC.Checked)
+                + Convert.ToInt32(this.checkBoxEndingD.Checked)
+                + Convert.ToInt32(this.checkBoxEndingE.Checked)
+                + Convert.ToInt32(this.checkBoxEndingF.Checked)
+                + Convert.ToInt32(this.checkBoxEndingG.Checked)
+                + Convert.ToInt32(this.checkBoxEndingH.Checked)
+                + Convert.ToInt32(this.checkBoxEndingI.Checked)
+                + Convert.ToInt32(this.checkBoxEndingJ.Checked)
+                + Convert.ToInt32(this.checkBoxEndingK.Checked)
+                + Convert.ToInt32(this.checkBoxEndingL.Checked)
+                + Convert.ToInt32(this.checkBoxEndingM.Checked)
+                + Convert.ToInt32(this.checkBoxEndingN.Checked)
+                + Convert.ToInt32(this.checkBoxEndingO.Checked)
+                + Convert.ToInt32(this.checkBoxEndingP.Checked)
+                + Convert.ToInt32(this.checkBoxEndingQ.Checked)
+                + Convert.ToInt32(this.checkBoxEndingR.Checked)
+                + Convert.ToInt32(this.checkBoxEndingS.Checked)
+                + Convert.ToInt32(this.checkBoxEndingT.Checked)
+                + Convert.ToInt32(this.checkBoxEndingU.Checked)
+                + Convert.ToInt32(this.checkBoxEndingV.Checked)
+                + Convert.ToInt32(this.checkBoxEndingW.Checked)
+                + Convert.ToInt32(this.checkBoxEndingX.Checked)
+                + Convert.ToInt32(this.checkBoxEndingY.Checked)
+                + Convert.ToInt32(this.checkBoxEndingZ.Checked);
+        }
+
         public void updateComponentDisplayStatus(string status)
         {
             this.labelConnectionStatus.Text = status;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.checkBoxEndingA.Checked = false;
+            this.checkBoxEndingB.Checked = false;
+            this.checkBoxEndingC.Checked = false;
+            this.checkBoxEndingD.Checked = false;
+            this.checkBoxEndingE.Checked = false;
+            this.checkBoxEndingF.Checked = false;
+            this.checkBoxEndingG.Checked = false;
+            this.checkBoxEndingH.Checked = false;
+            this.checkBoxEndingI.Checked = false;
+            this.checkBoxEndingJ.Checked = false;
+            this.checkBoxEndingK.Checked = false;
+            this.checkBoxEndingL.Checked = false;
+            this.checkBoxEndingM.Checked = false;
+            this.checkBoxEndingN.Checked = false;
+            this.checkBoxEndingO.Checked = false;
+            this.checkBoxEndingP.Checked = false;
+            this.checkBoxEndingQ.Checked = false;
+            this.checkBoxEndingR.Checked = false;
+            this.checkBoxEndingS.Checked = false;
+            this.checkBoxEndingT.Checked = false;
+            this.checkBoxEndingU.Checked = false;
+            this.checkBoxEndingV.Checked = false;
+            this.checkBoxEndingW.Checked = false;
+            this.checkBoxEndingX.Checked = false;
+            this.checkBoxEndingY.Checked = false;
+            this.checkBoxEndingZ.Checked = false;
+            this.textProgressBarEndings.Value = 0;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.checkBoxEndingA.Checked = true;
+            this.checkBoxEndingB.Checked = true;
+            this.checkBoxEndingC.Checked = true;
+            this.checkBoxEndingD.Checked = true;
+            this.checkBoxEndingE.Checked = true;
+            this.checkBoxEndingF.Checked = true;
+            this.checkBoxEndingG.Checked = true;
+            this.checkBoxEndingH.Checked = true;
+            this.checkBoxEndingI.Checked = true;
+            this.checkBoxEndingJ.Checked = true;
+            this.checkBoxEndingK.Checked = true;
+            this.checkBoxEndingL.Checked = true;
+            this.checkBoxEndingM.Checked = true;
+            this.checkBoxEndingN.Checked = true;
+            this.checkBoxEndingO.Checked = true;
+            this.checkBoxEndingP.Checked = true;
+            this.checkBoxEndingQ.Checked = true;
+            this.checkBoxEndingR.Checked = true;
+            this.checkBoxEndingS.Checked = true;
+            this.checkBoxEndingT.Checked = true;
+            this.checkBoxEndingU.Checked = true;
+            this.checkBoxEndingV.Checked = true;
+            this.checkBoxEndingW.Checked = true;
+            this.checkBoxEndingX.Checked = true;
+            this.checkBoxEndingY.Checked = true;
+            this.checkBoxEndingZ.Checked = true;
+            this.textProgressBarEndings.Value = 26;
+        }
+
+        private void manualEndingChanged(object sender, EventArgs e)
+        {
+            updateEndingCount();
         }
     }
 }
